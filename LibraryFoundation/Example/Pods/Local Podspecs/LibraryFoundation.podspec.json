@@ -1,0 +1,73 @@
+{
+  "name": "LibraryFoundation",
+  "version": "0.1.0",
+  "summary": "A short description of LibraryFoundation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/airfight/LibraryFoundation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "airfight": "gy.zhu@ctrip.com"
+  },
+  "source": {
+    "git": "https://github.com/airfight/LibraryFoundation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "libraries": [
+    "bz2",
+    "z",
+    "stdc++"
+  ],
+  "dependencies": {
+    "SSZipArchive": [
+      "2.1.4"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "FileManager",
+      "source_files": "LibraryFoundation/Classes/FileManager/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/FileManager/*.h"
+    },
+    {
+      "name": "Communication",
+      "source_files": "LibraryFoundation/Classes/Communication/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/Communication/*.h"
+    },
+    {
+      "name": "Foundation",
+      "source_files": "LibraryFoundation/Classes/Foundation/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/Foundation/*.h"
+    },
+    {
+      "name": "Navigation",
+      "source_files": "LibraryFoundation/Classes/Navigation/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/Navigation/*.h"
+    },
+    {
+      "name": "STExtensions",
+      "source_files": "LibraryFoundation/Classes/STExtensions/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/STExtensions/*.h"
+    },
+    {
+      "name": "Thread",
+      "source_files": "LibraryFoundation/Classes/Thread/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/Thread/*.h"
+    },
+    {
+      "name": "Tools",
+      "source_files": "LibraryFoundation/Classes/Tools/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/Tools/*.h"
+    },
+    {
+      "name": "UIKit",
+      "source_files": "LibraryFoundation/Classes/UIKit/*.{h,m}",
+      "public_header_files": "LibraryFoundation/Classes/UIKit/*.h"
+    }
+  ]
+}

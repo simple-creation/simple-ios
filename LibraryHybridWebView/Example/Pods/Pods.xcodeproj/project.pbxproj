@@ -1,0 +1,1602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F5757B2C03AFF1BEC3091FAF793CF6 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C6CB790C14CF28BBC56D49077B5D43 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0227B2E246A4FE3E94C5E4AA978CECB7 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 17D854A7B221FCF633F0673D4CEFA414 /* ioapi_mem.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		02E99FB88DACF3E55CB94563547732BA /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = FEA8CD287D94C3BB82D153938879C569 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		05799D1EE7923AA2464C1F707B84CED6 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = 6603D9E8ADE645C0AE39C8A8DB20B856 /* minishared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		07BFEB06AC4F869947E16682E8CB9EE1 /* minishared.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D43B385BC820B5D8767FF80CABDC0D /* minishared.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		09D0A96146A75DBC26C665BF2771444D /* NSUserDefaults+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 68499F09106780B1BCAA360B4B6380E6 /* NSUserDefaults+STExtension.m */; };
+		0DF65E40528FDBB1475B58DDF11C784F /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7311C95C3F7A248A3913F5DD54E04 /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1256DE350A84A708B502DD2DA07D3CC4 /* Pods-LibraryHybridWebView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDEA012EA51D9778D518F8AF8AF2F10 /* Pods-LibraryHybridWebView_Tests-dummy.m */; };
+		1271AB1023C04DDB61CB3D5297A287E7 /* LibraryFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 542829D3152F00818CCA02B181E1D94B /* LibraryFoundation-dummy.m */; };
+		12C04B29CE230E93A2933A3EC58D6AA4 /* NSString+Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734BF7915D398C8BEBA61729A1220FB /* NSString+Md5.m */; };
+		12D0A4C3E58E0B3AD0F2E34BD64DEA64 /* STRNUnZip.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33FD4DD18B94F4A31B6402DB058C83 /* STRNUnZip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		13BC582426E6900A29F7CF7DCE011356 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E45A7DEAC99A9915617B40E190BF0D4 /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1919DA520FED55CD6C2DFBDAF970DAAA /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF29FD67F8D88F7A839F1A744F1D053 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D4B7D152B0A0F10430F72F95899BDAD /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = FBC4B109F3980385C5BAC7E2FC1F10D3 /* aes_ni.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20871570918482C48D7F4D5E81C60AC2 /* NSArray+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E66AFD508660B13FAE1503C23C2E8F /* NSArray+STExtension.m */; };
+		208ED11B75FD640E7B61B64F79B682B2 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4392A543718F94588B1E3CDC025B17 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20EBB9EE62E83FE7EDD54D935C5CBF06 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DF41C9694F668D60CF58BBE6E4DB65BF /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		225CC271987F11DAE0F54A467D539841 /* ioapi_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEB2C6FCFABB3A171CF31450ABE2E0C /* ioapi_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		227528FDC4C12CDCF4D9E69610EB9EB5 /* UIViewController+TopMostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C46B086E8EEDC33FF55F575FB87A831 /* UIViewController+TopMostViewController.m */; };
+		2568CB9530694B6C5B779BE8B7032FB5 /* NSData+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D0EFE31195628FD431A9F00AFDFD49 /* NSData+STExtension.m */; };
+		2583C3497FA62C55FBA629B883F2BC2C /* STRNFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0097FA36F4CB773D55D903411B7B4 /* STRNFileManager.m */; };
+		261F5071D560C709288E5F052E273CE9 /* UIView+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D1376197136E005347BA3B1D7F62346A /* UIView+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27AF3B1E44AE82EFF54040911DE6D6AF /* NSNotificationCenter+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F9A13BD4D5CAC386FEBFE1A463FFDB /* NSNotificationCenter+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		283BF4A12B99DFEC11D26166CADFF662 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = BBC6D97E8F610426235077D5B5EFCDB4 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		292F4F90ECCE63838A201431D80DD4D1 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 057D550B4C33693E2B34673B9E394146 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29F3186B92076DD3E771427826E435AE /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F17912163D8512BFC331A577D87DB3E0 /* StringUtil.m */; };
+		2CCD54DBCE3B23715FEA74AD8E03CE3E /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = E7799163ABBBD0E3FC2557A0083D6827 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D8A88A98086D05C12C9B79BA48DBCBA /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CCF242F4116CF58B550DEAF1041DC1 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31E276AFAEEBD65B96B2DF9819093D6F /* STMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 71EB33487752426EF2902C783108EAFF /* STMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		339E2869739804F069CB2E5B00DAE53D /* STLeftDragPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB93B165C0BA59149160FBC763545D3 /* STLeftDragPanGestureRecognizer.m */; };
+		34A8862ECDE75D15ABCD7B9C0B24E918 /* STSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = EA318BD1A522B6832F549FC8572FE098 /* STSingleton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		356536CDFC1BEB634A4ECD66401536A1 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F1FCFB776BD5ADAC281C469430A660D /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F8401E03A16D7C4D2534B4665A3FF5E /* STRNFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C574229760899B807A086B6A95C5F7E7 /* STRNFileManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3FAEC8F99E0C61C44FE317FDB17AF7A1 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF6006416019D70CF7168938F353F68 /* SSZipArchive-dummy.m */; };
+		444D4A0D93A9EAEE007C5341BBCF9E3E /* STBusObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC70FB5A9BBAD7F4B9A61D8F206EC6B /* STBusObject.m */; };
+		4554872D35A568731C31BEFA0623DE1E /* NSFileManager+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63466BCCDCAF0EC645892A9BE067F1FC /* NSFileManager+STExtension.m */; };
+		45CBD9839AAD70205B8933815A8EBA90 /* LibraryHybridWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F10986204C90C5250B9E6CE6B5882EF /* LibraryHybridWebView-dummy.m */; };
+		47190D7693DE798B71BFF8FD4DB738BD /* NSString+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CC3C6F3EDB228D3AD13E923DAB8976 /* NSString+STExtension.m */; };
+		4786A161078811D637F35A0B2CF06B8D /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 59C38E85932255FEA4538C0F233FC65B /* crypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47BD396139ADEF901313DB651379B7A2 /* STRNUnZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37618F5A96767B62B472A16A21D8FE /* STRNUnZip.m */; };
+		4C209CF63183A68668B30F7E81300BBA /* STThredUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6AE590CAF0C68B6D527508ABD3594 /* STThredUtil.m */; };
+		4CC697B6E64F05C09D29B58182E3AB44 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BFC67BE0C7296F1A0FE36B8B6D1081 /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F2A2815289CC8C8106B6193C59FA1CD /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8754C12E0934A46267D7A7095F80EBB7 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50129CDF72A135F07B66BC04EF5FDE90 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C3E4FC2CA756E0952DCA0CBCD24117CF /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54293947C1764EB828B3C5A05F5B3BAF /* STHybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E364A2010A00FF3DA8C4260A34A3934 /* STHybirdViewController.m */; };
+		547DB3A10BB3E129867582C6117BD4FB /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 9581BBC8E8C40720D28661E0AB373193 /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55296B9E7DCEEBA2EA7A79BDFD02B030 /* STThredUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EBC1D6344D46E35425D4A3F440D5B7 /* STThredUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		577AD1281E093F966D3FD3E1F3A362ED /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C990DC76C3C3C2FB2219110D494FA2 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FDBBD12F3D21001975B333C35C0C08F /* NSDictionary+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9E5E7B27A18FEB766AFA6E7999321A /* NSDictionary+STExtension.m */; };
+		65F354A7F6A59C3D201491F646D91B44 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB05DE1EE27F28996C1508C079571E4 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67040CEA55E9E8F3EE168D1804829577 /* STCommunicationPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD0EB684DDC5E22A5D2A18763F5A93D /* STCommunicationPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		682140E70E4CAA88756D5A37B7E70DE5 /* NSDate+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B065937F273C701B31E502A20D0A5F03 /* NSDate+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6895C5B1CF41FF67E5E0E503F53114E1 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5AE27F6FBBE028F534D6445BF4721 /* ReplaceMe.m */; };
+		6E5829AF4EE08E4F637D4BC79CEC536E /* STWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CC8D32C2F2574C5CF4D64DF87DC6A /* STWKWebViewController.m */; };
+		708EC4B2AFD92626BA746801BEAF24A1 /* NSDate+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ABAA90B74CF1D27FED0763798C002A /* NSDate+STExtension.m */; };
+		7241CA542754527DEC55A16F8E766E39 /* NSArray+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FAA1FA4A001EB0F7F2C4B75A8D08A51 /* NSArray+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79F6E7089E876CD960E9BA02E0464E59 /* UIViewController+TopMostViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC45E235CC81C83199640170E9DD2C0 /* UIViewController+TopMostViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A3EC9323C6AE281E1221414AFBB96D5 /* NSString+Md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D1D0A336C70F4F31B3FE963CF5050A /* NSString+Md5.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CBAC167FD68351B791FD6BDBE1A627E /* STBSPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE03DFEED419DFBFB27B24CFE4A3FFA /* STBSPatch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82FD3CCFCE01A57E76A39B0E74CFD8B8 /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = CE90B870BA69129D1E2B3966B33E14A9 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84515860A4AD37405647D4A3E9781F4D /* STDragNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CCB4C39C2E1E1742CE72BEECA8256 /* STDragNavigationController.m */; };
+		85EC575E7B461EAB3AAA14D4ED57DB3A /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = C261407A96FC4C1BFA760695CE7B5816 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		86D9700B312694AA876C7D4BDBF433ED /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4C23367FB686997303D576C0D64F5B /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F3160D6F74D873EE9329C48B8EF6F21 /* UIDevice+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BBE0C5B057AF5B303C9C27BDBD8578 /* UIDevice+STExtension.m */; };
+		90110FA8EF369C08242946390682F477 /* STDragNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3624BE1891EABD3A9777A91AFF0CE2BC /* STDragNavigationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90A21E6B722C158F4292FD11D300EDA7 /* UIView+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C614D4C65D41659F631321863C9630 /* UIView+STExtension.m */; };
+		9B1C108CCD0B38622A27F1936B1B0660 /* STJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE57EB2F27B20CEA56175349B530A3D /* STJSONSerialization.m */; };
+		A3B2D121A2E4A557BD18A3C43BA7933E /* LibraryBaseBusiness-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B89CB9418434038B5D387A885A6B881D /* LibraryBaseBusiness-dummy.m */; };
+		A82ED4B02B1C9D267FFA697F2091D3EE /* STSchemalRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A435A04EC156ABD3BF5E2D2F8D9A649 /* STSchemalRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AAD92878FADAABE3FA1F612194035670 /* STBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA395E142B613E2BD6B9706F035647 /* STBus.m */; };
+		AB5FBB4E9242AF668C69E5EF81420E4A /* NSString+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B43B27933672F8E0FFADAAEF74F4638 /* NSString+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD02A9B007D67052487C0CF26B42149B /* STNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839EE15288FD84DB77E167FD9D475822 /* STNavViewController.m */; };
+		AD0FC23F32BA66911B71CE727965B998 /* STNavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4722ED1871E8F0FBFC69C93F3F46DE42 /* STNavViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AF4061633FD7D65CBFC6EC6C3DE48533 /* STBaseBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A05A72E29E97BE81A02D0EE095F7B15 /* STBaseBusiness.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3DBE223288274B09D527C328850B5BA /* STBSPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F668B2823FC692E7520D12A32AB548E /* STBSPatch.m */; };
+		B3E7255DC1D36C9095744FB78B55565D /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAAB114880A63B6BD68E2B9B8EDB623 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B547172317CC9A4973E73C4B4EF2D879 /* UIDevice+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 15926DB299810F1DA9AFB0A2CA1784A2 /* UIDevice+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5B1886A6537AFED0120BA16D8218FD9 /* STCommunicationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE83F84F54C85D4A516BDCAA021F1DC /* STCommunicationPlugin.m */; };
+		B6EBC47DA52B4D581CBCA93B4CFDB1A1 /* STBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB15188D6A3D8D99D1C9003787AB9FA /* STBus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF8F54B91D3FA6C1C4FAF8C3E2341ECB /* aes_ni.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CD3725C22817F6C98645F284B236E6 /* aes_ni.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFFA189CC0F9681CA3CDD9862173D807 /* NSDictionary+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D834B31A95E9A61935B9AA7BC7A9AEDB /* NSDictionary+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0753061F68044B92FC107E66E809C6A /* NSFileManager+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7510CE5C7C4B65F4C1EC1F3187EAED /* NSFileManager+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0FD9FA57CA123B5169DA28D0E743652 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A78CD8BAF159181A909A806AA0E677 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4338374996D7B807DE6D7A3B178B379 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = B0CF73FAF7E71BB160711BFF1ECA6605 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4695BEED9A3A51A9729AD87432F16FB /* ioapi_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A588BBD87E5A251866D87987B34B8E /* ioapi_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C58C4CB600C2B7140E50CC122B5D5FE6 /* STJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = DD40FE925239EE8A1C9B40ADEABB38ED /* STJSONSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7DE44A626644ED0D7DE17718104D698 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBB26EC944F035E6A292D3D08BB7666 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D086F91A6D41C445430ADD5EE18D0816 /* NSNotificationCenter+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E59BC008AC5D10B11EC44F7B4B49A /* NSNotificationCenter+STExtension.m */; };
+		D39A33549B9CE136124F510BA4396EC4 /* STCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FF9F7465AD8EB2D58CC8AAF4713391 /* STCommunication.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5564CE43D789DBDABFC9F95FA189363 /* Pods-LibraryHybridWebView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F591CA08CBBBE77DB28A1F2DB9D64140 /* Pods-LibraryHybridWebView_Example-dummy.m */; };
+		D8B1F165D8961DC6A7EDBB81353D5EBC /* STHybirdViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9EC6964835677ACAADF00B3CA791B6 /* STHybirdViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DCDA498A5B466E69C06E37566575CAB0 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = AA8CD68A28FF66F8F16C2208D85D5CB3 /* ioapi_buf.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DCEB8B22E9EFEF5E791DD037C9917F7A /* STLeftDragPanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = E1DA1A120B206BCADA59C4509C611968 /* STLeftDragPanGestureRecognizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE379A8FEDF604F5507B280675480A6F /* NSUserDefaults+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D12C28815428DCD75C71C43B130A09 /* NSUserDefaults+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E50F3C413B215FC5FC76CEED61830FC3 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 261B3A8DD6D296DE3565FEB63824D3FF /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E79150FEDEF9A723C157A96E5FD5F119 /* STSchemalRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 452825624F44FB7D3D4FA121C6518538 /* STSchemalRule.m */; };
+		E79B29927314B73A8883F4F4379CCA0B /* STCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = F41AFC555A2EAC7B8B0F5B3D9C236DE2 /* STCommunication.m */; };
+		E973561F89A5BB487A68BB73C1F59438 /* STWKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A685CD45E76CFFAE0CADCA27B7E5FAA /* STWKWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1B8A3061148961F008ED05503E721B5 /* STBusObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FB15C1F75D1F4AE002BCF0A49F64A815 /* STBusObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4879999D4D7589BCA9372931A9D3806 /* NSData+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F42C0DCABC64E53F411B46F006224336 /* NSData+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F493D04142908B5F4846BA25790B9BFA /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEEBEB5369647D87B36BB0F4053DF6C /* StringUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6D6B0009049EF375CE88B1A8CB3FB1C /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E201A632A431906719AD5B3133E26F /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB4E3869A8D2CE9695BDAE08379B1AE5 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = EF92C0EAB79BB7F61E8FD0A529173916 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD2D6FE2443370FD3A68A0CF3F5AA1F2 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = FD5D0731CF9E5D8418790E9AE78C4315 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEB3598B314D9658ACA97446F7D9A6D7 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 962C56C887D4396A97116AE668725C68 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10D3E7589081B565022B9028E7AB7BD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578AB7F5BA0C94399B4CF533F5C532AA;
+			remoteInfo = LibraryFoundation;
+		};
+		18D05C45759633D418F978289ABF44A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 234910E251992905EFD5110E6492B6CA;
+			remoteInfo = "Pods-LibraryHybridWebView_Example";
+		};
+		32C7974B199544D248B7E29F0913200E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578AB7F5BA0C94399B4CF533F5C532AA;
+			remoteInfo = LibraryFoundation;
+		};
+		4C541703A09B590B1A1FFD216C4F0010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578AB7F5BA0C94399B4CF533F5C532AA;
+			remoteInfo = LibraryFoundation;
+		};
+		7A6905AAFD347E05E6E8E4851220BA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
+			remoteInfo = SSZipArchive;
+		};
+		9F6C3270517E6BF5BAF9B29DE2D48563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC86A980029D0A473892775A947AC92;
+			remoteInfo = LibraryBaseBusiness;
+		};
+		D0F336061735525388304ECEE963A99B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E1A8E57CB987745907E17D26EB11ACE;
+			remoteInfo = LibraryHybridWebView;
+		};
+		E16994D4ED87618B423724E0F1E4AEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
+			remoteInfo = SSZipArchive;
+		};
+		FAA30E2B080AA249C23DDD3FCB85E712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC86A980029D0A473892775A947AC92;
+			remoteInfo = LibraryBaseBusiness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C6CB790C14CF28BBC56D49077B5D43 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		057D550B4C33693E2B34673B9E394146 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		0734BF7915D398C8BEBA61729A1220FB /* NSString+Md5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Md5.m"; path = "LibraryFoundation/Classes/Foundation/NSString+Md5.m"; sourceTree = "<group>"; };
+		0CF29FD67F8D88F7A839F1A744F1D053 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		13B602D150164E66FF61C442110273A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		15926DB299810F1DA9AFB0A2CA1784A2 /* UIDevice+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/UIDevice+STExtension.h"; sourceTree = "<group>"; };
+		173A27F7A2F6E60553B54D937F8BF20A /* LibraryBaseBusiness-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LibraryBaseBusiness-prefix.pch"; sourceTree = "<group>"; };
+		17CC3C6F3EDB228D3AD13E923DAB8976 /* NSString+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSString+STExtension.m"; sourceTree = "<group>"; };
+		17D854A7B221FCF633F0673D4CEFA414 /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
+		1AEEBEB5369647D87B36BB0F4053DF6C /* StringUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringUtil.h; path = LibraryFoundation/Classes/STExtensions/StringUtil.h; sourceTree = "<group>"; };
+		1C4392A543718F94588B1E3CDC025B17 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/minizip/aes/brg_types.h; sourceTree = "<group>"; };
+		1CCA395E142B613E2BD6B9706F035647 /* STBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STBus.m; path = LibraryBaseBusiness/Classes/STBus.m; sourceTree = "<group>"; };
+		1D9E59BC008AC5D10B11EC44F7B4B49A /* NSNotificationCenter+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSNotificationCenter+STExtension.m"; sourceTree = "<group>"; };
+		1FF805ABE94F2C31BD998718C0E73366 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		20CCF242F4116CF58B550DEAF1041DC1 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/minizip/aes/sha1.h; sourceTree = "<group>"; };
+		223607C4AF3AD5D8D8CF7D9BE1673791 /* libLibraryHybridWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLibraryHybridWebView.a; path = libLibraryHybridWebView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		261B3A8DD6D296DE3565FEB63824D3FF /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
+		26D1D0A336C70F4F31B3FE963CF5050A /* NSString+Md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Md5.h"; path = "LibraryFoundation/Classes/Foundation/NSString+Md5.h"; sourceTree = "<group>"; };
+		27D3D38E15C9213005DA740280CCA725 /* LibraryHybridWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryHybridWebView.release.xcconfig; sourceTree = "<group>"; };
+		29A932A55588850A5533CCE80E5C223B /* Pods-LibraryHybridWebView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LibraryHybridWebView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A7510CE5C7C4B65F4C1EC1F3187EAED /* NSFileManager+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSFileManager+STExtension.h"; sourceTree = "<group>"; };
+		2BC7311C95C3F7A248A3913F5DD54E04 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
+		2C5CCB4C39C2E1E1742CE72BEECA8256 /* STDragNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STDragNavigationController.m; path = LibraryFoundation/Classes/Navigation/STDragNavigationController.m; sourceTree = "<group>"; };
+		2FEB2C6FCFABB3A171CF31450ABE2E0C /* ioapi_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_buf.h; path = SSZipArchive/minizip/ioapi_buf.h; sourceTree = "<group>"; };
+		3624BE1891EABD3A9777A91AFF0CE2BC /* STDragNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STDragNavigationController.h; path = LibraryFoundation/Classes/Navigation/STDragNavigationController.h; sourceTree = "<group>"; };
+		3A685CD45E76CFFAE0CADCA27B7E5FAA /* STWKWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STWKWebViewController.h; path = LibraryHybridWebView/Classes/STWKWebViewController.h; sourceTree = "<group>"; };
+		3C46B086E8EEDC33FF55F575FB87A831 /* UIViewController+TopMostViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TopMostViewController.m"; path = "LibraryFoundation/Classes/UIKit/UIViewController+TopMostViewController.m"; sourceTree = "<group>"; };
+		3CDEA012EA51D9778D518F8AF8AF2F10 /* Pods-LibraryHybridWebView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LibraryHybridWebView_Tests-dummy.m"; sourceTree = "<group>"; };
+		402FCA263313FE8C624FB5ED7E723FDE /* LibraryFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LibraryFoundation-prefix.pch"; sourceTree = "<group>"; };
+		446CC8D32C2F2574C5CF4D64DF87DC6A /* STWKWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STWKWebViewController.m; path = LibraryHybridWebView/Classes/STWKWebViewController.m; sourceTree = "<group>"; };
+		452825624F44FB7D3D4FA121C6518538 /* STSchemalRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STSchemalRule.m; path = LibraryBaseBusiness/Classes/Communication/STSchemalRule.m; sourceTree = "<group>"; };
+		4722ED1871E8F0FBFC69C93F3F46DE42 /* STNavViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STNavViewController.h; path = LibraryFoundation/Classes/UIKit/STNavViewController.h; sourceTree = "<group>"; };
+		4F10986204C90C5250B9E6CE6B5882EF /* LibraryHybridWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LibraryHybridWebView-dummy.m"; sourceTree = "<group>"; };
+		4F9EC6964835677ACAADF00B3CA791B6 /* STHybirdViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHybirdViewController.h; path = LibraryHybridWebView/Classes/STHybirdViewController.h; sourceTree = "<group>"; };
+		4FE83F84F54C85D4A516BDCAA021F1DC /* STCommunicationPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STCommunicationPlugin.m; path = LibraryBaseBusiness/Classes/Communication/STCommunicationPlugin.m; sourceTree = "<group>"; };
+		530DE0E91C69BDF34686327DEE2D2439 /* libPods-LibraryHybridWebView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LibraryHybridWebView_Example.a"; path = "libPods-LibraryHybridWebView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		539D281073A61050734A9C2E2701E12C /* libPods-LibraryHybridWebView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LibraryHybridWebView_Tests.a"; path = "libPods-LibraryHybridWebView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		542829D3152F00818CCA02B181E1D94B /* LibraryFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LibraryFoundation-dummy.m"; sourceTree = "<group>"; };
+		54E66AFD508660B13FAE1503C23C2E8F /* NSArray+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSArray+STExtension.m"; sourceTree = "<group>"; };
+		59C38E85932255FEA4538C0F233FC65B /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
+		5A05A72E29E97BE81A02D0EE095F7B15 /* STBaseBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBaseBusiness.h; path = LibraryBaseBusiness/Classes/STBaseBusiness.h; sourceTree = "<group>"; };
+		5AE03DFEED419DFBFB27B24CFE4A3FFA /* STBSPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBSPatch.h; path = LibraryFoundation/Classes/Thread/STBSPatch.h; sourceTree = "<group>"; };
+		5BD0EB684DDC5E22A5D2A18763F5A93D /* STCommunicationPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STCommunicationPlugin.h; path = LibraryBaseBusiness/Classes/Communication/STCommunicationPlugin.h; sourceTree = "<group>"; };
+		5CC70FB5A9BBAD7F4B9A61D8F206EC6B /* STBusObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STBusObject.m; path = LibraryBaseBusiness/Classes/STBusObject.m; sourceTree = "<group>"; };
+		5F1FCFB776BD5ADAC281C469430A660D /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		61F99752A71B7ED915208E85F2B9F26D /* LibraryBaseBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryBaseBusiness.release.xcconfig; sourceTree = "<group>"; };
+		63466BCCDCAF0EC645892A9BE067F1FC /* NSFileManager+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSFileManager+STExtension.m"; sourceTree = "<group>"; };
+		64607A1440C66AF6B782C6FA506E6755 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6542FB7F21D10C75CB35221FA89751B9 /* LibraryFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryFoundation.release.xcconfig; sourceTree = "<group>"; };
+		6603D9E8ADE645C0AE39C8A8DB20B856 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
+		68499F09106780B1BCAA360B4B6380E6 /* NSUserDefaults+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSUserDefaults+STExtension.m"; sourceTree = "<group>"; };
+		69BBE0C5B057AF5B303C9C27BDBD8578 /* UIDevice+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/UIDevice+STExtension.m"; sourceTree = "<group>"; };
+		6A435A04EC156ABD3BF5E2D2F8D9A649 /* STSchemalRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STSchemalRule.h; path = LibraryBaseBusiness/Classes/Communication/STSchemalRule.h; sourceTree = "<group>"; };
+		6AB05DE1EE27F28996C1508C079571E4 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/minizip/aes/brg_endian.h; sourceTree = "<group>"; };
+		6CC45E235CC81C83199640170E9DD2C0 /* UIViewController+TopMostViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TopMostViewController.h"; path = "LibraryFoundation/Classes/UIKit/UIViewController+TopMostViewController.h"; sourceTree = "<group>"; };
+		6E364A2010A00FF3DA8C4260A34A3934 /* STHybirdViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STHybirdViewController.m; path = LibraryHybridWebView/Classes/STHybirdViewController.m; sourceTree = "<group>"; };
+		6F1305710355A8B454D940308F58E688 /* LibraryBaseBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryBaseBusiness.debug.xcconfig; sourceTree = "<group>"; };
+		6FAA1FA4A001EB0F7F2C4B75A8D08A51 /* NSArray+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSArray+STExtension.h"; sourceTree = "<group>"; };
+		71EB33487752426EF2902C783108EAFF /* STMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STMacros.h; path = LibraryFoundation/Classes/STExtensions/STMacros.h; sourceTree = "<group>"; };
+		7291FAE7F40E5E61282258C0E7D566DF /* SSZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.release.xcconfig; sourceTree = "<group>"; };
+		792CA8572D3493AB25E16CE9428822E2 /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
+		7E45A7DEAC99A9915617B40E190BF0D4 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
+		7F37618F5A96767B62B472A16A21D8FE /* STRNUnZip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STRNUnZip.m; path = LibraryFoundation/Classes/Tools/STRNUnZip.m; sourceTree = "<group>"; };
+		8331D094E2014E6E9713705335D74786 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		839EE15288FD84DB77E167FD9D475822 /* STNavViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STNavViewController.m; path = LibraryFoundation/Classes/UIKit/STNavViewController.m; sourceTree = "<group>"; };
+		8754C12E0934A46267D7A7095F80EBB7 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/minizip/aes/hmac.h; sourceTree = "<group>"; };
+		89866FA6D739B746DB74120D5BD6A2FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8B43B27933672F8E0FFADAAEF74F4638 /* NSString+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSString+STExtension.h"; sourceTree = "<group>"; };
+		8F668B2823FC692E7520D12A32AB548E /* STBSPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STBSPatch.m; path = LibraryFoundation/Classes/Thread/STBSPatch.m; sourceTree = "<group>"; };
+		8FAAB114880A63B6BD68E2B9B8EDB623 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		8FBB26EC944F035E6A292D3D08BB7666 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSZipArchive.a; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1234311A68C3F7C73FFE5D0498CBA /* LibraryFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		93ABAA90B74CF1D27FED0763798C002A /* NSDate+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSDate+STExtension.m"; sourceTree = "<group>"; };
+		956BA727BF9D93F6CA85F643DDDB3D6D /* Pods-LibraryHybridWebView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibraryHybridWebView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9581BBC8E8C40720D28661E0AB373193 /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/minizip/aes/pwd2key.h; sourceTree = "<group>"; };
+		962C56C887D4396A97116AE668725C68 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		98FF9F7465AD8EB2D58CC8AAF4713391 /* STCommunication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STCommunication.h; path = LibraryBaseBusiness/Classes/Communication/STCommunication.h; sourceTree = "<group>"; };
+		9D25C94EEC4BA372CDD85B8E3D481A14 /* Pods-LibraryHybridWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E68A97E897158071C927A7EA2F0FA56 /* Pods-LibraryHybridWebView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LibraryHybridWebView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FB15188D6A3D8D99D1C9003787AB9FA /* STBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBus.h; path = LibraryBaseBusiness/Classes/STBus.h; sourceTree = "<group>"; };
+		A2A0097FA36F4CB773D55D903411B7B4 /* STRNFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STRNFileManager.m; path = LibraryFoundation/Classes/FileManager/STRNFileManager.m; sourceTree = "<group>"; };
+		A46238FD230E9CF8A82A3E28F8A4416C /* Pods-LibraryHybridWebView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibraryHybridWebView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A56E049A77611F16E26916013C80E6D7 /* Pods-LibraryHybridWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7B02645FAB25CBF0E98143129756696 /* LibraryHybridWebView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LibraryHybridWebView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA8CD68A28FF66F8F16C2208D85D5CB3 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
+		B065937F273C701B31E502A20D0A5F03 /* NSDate+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSDate+STExtension.h"; sourceTree = "<group>"; };
+		B0CF73FAF7E71BB160711BFF1ECA6605 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		B6BFC67BE0C7296F1A0FE36B8B6D1081 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/minizip/aes/aesopt.h; sourceTree = "<group>"; };
+		B6D0EFE31195628FD431A9F00AFDFD49 /* NSData+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSData+STExtension.m"; sourceTree = "<group>"; };
+		B89CB9418434038B5D387A885A6B881D /* LibraryBaseBusiness-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LibraryBaseBusiness-dummy.m"; sourceTree = "<group>"; };
+		B9C6AE590CAF0C68B6D527508ABD3594 /* STThredUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STThredUtil.m; path = LibraryFoundation/Classes/Thread/STThredUtil.m; sourceTree = "<group>"; };
+		BA0DC5082E595577433F373A58881245 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BBC6D97E8F610426235077D5B5EFCDB4 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
+		BF33FD4DD18B94F4A31B6402DB058C83 /* STRNUnZip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STRNUnZip.h; path = LibraryFoundation/Classes/Tools/STRNUnZip.h; sourceTree = "<group>"; };
+		C135EBEFC954EC3F09F7BC1DF0996868 /* LibraryHybridWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LibraryHybridWebView-prefix.pch"; sourceTree = "<group>"; };
+		C261407A96FC4C1BFA760695CE7B5816 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
+		C3E4FC2CA756E0952DCA0CBCD24117CF /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		C4C990DC76C3C3C2FB2219110D494FA2 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/minizip/aes/aestab.h; sourceTree = "<group>"; };
+		C574229760899B807A086B6A95C5F7E7 /* STRNFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STRNFileManager.h; path = LibraryFoundation/Classes/FileManager/STRNFileManager.h; sourceTree = "<group>"; };
+		C61056B2ADFBFAE94130E5B66B10CA9E /* Pods-LibraryHybridWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C66AE0A0648578CD51E9261A3D9F364B /* LibraryFoundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LibraryFoundation.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C6A78CD8BAF159181A909A806AA0E677 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		CAE57EB2F27B20CEA56175349B530A3D /* STJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STJSONSerialization.m; path = LibraryFoundation/Classes/Tools/STJSONSerialization.m; sourceTree = "<group>"; };
+		CE4C23367FB686997303D576C0D64F5B /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
+		CE90B870BA69129D1E2B3966B33E14A9 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/minizip/aes/fileenc.h; sourceTree = "<group>"; };
+		CFF6006416019D70CF7168938F353F68 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		D1376197136E005347BA3B1D7F62346A /* UIView+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/UIView+STExtension.h"; sourceTree = "<group>"; };
+		D1E201A632A431906719AD5B3133E26F /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		D7C8F977A7A919AF8FC34A7C10D38D4B /* libLibraryBaseBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLibraryBaseBusiness.a; path = libLibraryBaseBusiness.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D834B31A95E9A61935B9AA7BC7A9AEDB /* NSDictionary+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSDictionary+STExtension.h"; sourceTree = "<group>"; };
+		DB9E5E7B27A18FEB766AFA6E7999321A /* NSDictionary+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSDictionary+STExtension.m"; sourceTree = "<group>"; };
+		DC3E3E8FBD0089878E0C0D86C82B8272 /* LibraryHybridWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryHybridWebView.debug.xcconfig; sourceTree = "<group>"; };
+		DD40FE925239EE8A1C9B40ADEABB38ED /* STJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STJSONSerialization.h; path = LibraryFoundation/Classes/Tools/STJSONSerialization.h; sourceTree = "<group>"; };
+		DF41C9694F668D60CF58BBE6E4DB65BF /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		E0D43B385BC820B5D8767FF80CABDC0D /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = minishared.h; path = SSZipArchive/minizip/minishared.h; sourceTree = "<group>"; };
+		E0F5AE27F6FBBE028F534D6445BF4721 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LibraryHybridWebView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		E1DA1A120B206BCADA59C4509C611968 /* STLeftDragPanGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STLeftDragPanGestureRecognizer.h; path = LibraryFoundation/Classes/Navigation/STLeftDragPanGestureRecognizer.h; sourceTree = "<group>"; };
+		E5AA66669B9F2295A2EB0AE06C873FF9 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		E637AE09221F2646901BDA9F47ED7802 /* Pods-LibraryHybridWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E7799163ABBBD0E3FC2557A0083D6827 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/minizip/aes/prng.h; sourceTree = "<group>"; };
+		EA318BD1A522B6832F549FC8572FE098 /* STSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STSingleton.h; path = LibraryFoundation/Classes/STExtensions/STSingleton.h; sourceTree = "<group>"; };
+		ED449B18268078C220246F89654D5065 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EEB93B165C0BA59149160FBC763545D3 /* STLeftDragPanGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STLeftDragPanGestureRecognizer.m; path = LibraryFoundation/Classes/Navigation/STLeftDragPanGestureRecognizer.m; sourceTree = "<group>"; };
+		EEFC43E1AE8E3C07B121265906D1705B /* libLibraryFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLibraryFoundation.a; path = libLibraryFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8781E582E2C9BEA775B53C85B1060F /* LibraryBaseBusiness.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LibraryBaseBusiness.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF92C0EAB79BB7F61E8FD0A529173916 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
+		F0F9A13BD4D5CAC386FEBFE1A463FFDB /* NSNotificationCenter+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSNotificationCenter+STExtension.h"; sourceTree = "<group>"; };
+		F17912163D8512BFC331A577D87DB3E0 /* StringUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StringUtil.m; path = LibraryFoundation/Classes/STExtensions/StringUtil.m; sourceTree = "<group>"; };
+		F1A588BBD87E5A251866D87987B34B8E /* ioapi_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = SSZipArchive/minizip/ioapi_mem.h; sourceTree = "<group>"; };
+		F2EBC1D6344D46E35425D4A3F440D5B7 /* STThredUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STThredUtil.h; path = LibraryFoundation/Classes/Thread/STThredUtil.h; sourceTree = "<group>"; };
+		F3CD3725C22817F6C98645F284B236E6 /* aes_ni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_ni.h; path = SSZipArchive/minizip/aes/aes_ni.h; sourceTree = "<group>"; };
+		F41AFC555A2EAC7B8B0F5B3D9C236DE2 /* STCommunication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STCommunication.m; path = LibraryBaseBusiness/Classes/Communication/STCommunication.m; sourceTree = "<group>"; };
+		F42C0DCABC64E53F411B46F006224336 /* NSData+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSData+STExtension.h"; sourceTree = "<group>"; };
+		F591CA08CBBBE77DB28A1F2DB9D64140 /* Pods-LibraryHybridWebView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LibraryHybridWebView_Example-dummy.m"; sourceTree = "<group>"; };
+		F6C614D4C65D41659F631321863C9630 /* UIView+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/UIView+STExtension.m"; sourceTree = "<group>"; };
+		F7D12C28815428DCD75C71C43B130A09 /* NSUserDefaults+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSUserDefaults+STExtension.h"; sourceTree = "<group>"; };
+		FB15C1F75D1F4AE002BCF0A49F64A815 /* STBusObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBusObject.h; path = LibraryBaseBusiness/Classes/STBusObject.h; sourceTree = "<group>"; };
+		FBC4B109F3980385C5BAC7E2FC1F10D3 /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
+		FD5D0731CF9E5D8418790E9AE78C4315 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/minizip/aes/aes.h; sourceTree = "<group>"; };
+		FEA8CD287D94C3BB82D153938879C569 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		027C82B536BE6D0379224E649E63B7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469A3D248F47B6DB4F1CB726C9EE8B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA5AF50D3E0719CFE88A1106FB0AC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC77086870441C3D15D72E96C0EBC4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE3475285ABFE57BC3EC7F21CC00CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3C76E289D2A63802CD9C566EB964580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CB4ACFC85F4D6E07ABB8CC9F045FA0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				929D7FBA2F888D6A5D3BD69843CCBB05 /* LibraryBaseBusiness */,
+				812B63B8EC78633A8D30EFB5EB5B8179 /* LibraryFoundation */,
+				DBE6F5BFF02CC85D126A3939E3C20593 /* LibraryHybridWebView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1190A1D560D7C1FAE67010F71953CE06 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E765B1D8C17EBD650F21B31E1D6D90B1 /* Pods-LibraryHybridWebView_Example */,
+				E04C9C91A6962533EA2305A4C39B91E3 /* Pods-LibraryHybridWebView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		273F58B74ABD042D9A136B003F43DEB7 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4722ED1871E8F0FBFC69C93F3F46DE42 /* STNavViewController.h */,
+				839EE15288FD84DB77E167FD9D475822 /* STNavViewController.m */,
+				6CC45E235CC81C83199640170E9DD2C0 /* UIViewController+TopMostViewController.h */,
+				3C46B086E8EEDC33FF55F575FB87A831 /* UIViewController+TopMostViewController.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		477B507898D89965EC15CBAE42C5E0AF /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C574229760899B807A086B6A95C5F7E7 /* STRNFileManager.h */,
+				A2A0097FA36F4CB773D55D903411B7B4 /* STRNFileManager.m */,
+			);
+			name = FileManager;
+			sourceTree = "<group>";
+		};
+		6C4B774D7C695B1BE2C385E80A4DFBDB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C66AE0A0648578CD51E9261A3D9F364B /* LibraryFoundation.podspec */,
+				89866FA6D739B746DB74120D5BD6A2FE /* LICENSE */,
+				1FF805ABE94F2C31BD998718C0E73366 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6D3745DB2FABAD9C46D448D04BC03A50 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A7B02645FAB25CBF0E98143129756696 /* LibraryHybridWebView.podspec */,
+				BA0DC5082E595577433F373A58881245 /* LICENSE */,
+				64607A1440C66AF6B782C6FA506E6755 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DC0AFAC654408ECADE932E355F1CF4B /* STExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA1FA4A001EB0F7F2C4B75A8D08A51 /* NSArray+STExtension.h */,
+				54E66AFD508660B13FAE1503C23C2E8F /* NSArray+STExtension.m */,
+				F42C0DCABC64E53F411B46F006224336 /* NSData+STExtension.h */,
+				B6D0EFE31195628FD431A9F00AFDFD49 /* NSData+STExtension.m */,
+				B065937F273C701B31E502A20D0A5F03 /* NSDate+STExtension.h */,
+				93ABAA90B74CF1D27FED0763798C002A /* NSDate+STExtension.m */,
+				D834B31A95E9A61935B9AA7BC7A9AEDB /* NSDictionary+STExtension.h */,
+				DB9E5E7B27A18FEB766AFA6E7999321A /* NSDictionary+STExtension.m */,
+				2A7510CE5C7C4B65F4C1EC1F3187EAED /* NSFileManager+STExtension.h */,
+				63466BCCDCAF0EC645892A9BE067F1FC /* NSFileManager+STExtension.m */,
+				F0F9A13BD4D5CAC386FEBFE1A463FFDB /* NSNotificationCenter+STExtension.h */,
+				1D9E59BC008AC5D10B11EC44F7B4B49A /* NSNotificationCenter+STExtension.m */,
+				8B43B27933672F8E0FFADAAEF74F4638 /* NSString+STExtension.h */,
+				17CC3C6F3EDB228D3AD13E923DAB8976 /* NSString+STExtension.m */,
+				F7D12C28815428DCD75C71C43B130A09 /* NSUserDefaults+STExtension.h */,
+				68499F09106780B1BCAA360B4B6380E6 /* NSUserDefaults+STExtension.m */,
+				71EB33487752426EF2902C783108EAFF /* STMacros.h */,
+				1AEEBEB5369647D87B36BB0F4053DF6C /* StringUtil.h */,
+				F17912163D8512BFC331A577D87DB3E0 /* StringUtil.m */,
+				EA318BD1A522B6832F549FC8572FE098 /* STSingleton.h */,
+				15926DB299810F1DA9AFB0A2CA1784A2 /* UIDevice+STExtension.h */,
+				69BBE0C5B057AF5B303C9C27BDBD8578 /* UIDevice+STExtension.m */,
+				D1376197136E005347BA3B1D7F62346A /* UIView+STExtension.h */,
+				F6C614D4C65D41659F631321863C9630 /* UIView+STExtension.m */,
+			);
+			name = STExtensions;
+			sourceTree = "<group>";
+		};
+		812B63B8EC78633A8D30EFB5EB5B8179 /* LibraryFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				477B507898D89965EC15CBAE42C5E0AF /* FileManager */,
+				F89D3CC6F756D2962C79C7828B524ADD /* Foundation */,
+				D2D430E7A03071CFBF131C09C7D2492C /* Navigation */,
+				6C4B774D7C695B1BE2C385E80A4DFBDB /* Pod */,
+				7DC0AFAC654408ECADE932E355F1CF4B /* STExtensions */,
+				CF21AB1E24DDFD7A84857B413032E383 /* Support Files */,
+				890BF165B689C94231ECEE6228B63FF7 /* Thread */,
+				C24BB7FB0EC101596BE8503F7EE4DC4E /* Tools */,
+				273F58B74ABD042D9A136B003F43DEB7 /* UIKit */,
+			);
+			name = LibraryFoundation;
+			path = ../../../LibraryFoundation;
+			sourceTree = "<group>";
+		};
+		82BF673EEFD33CB15BA3790CBAEC4CB2 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				98FF9F7465AD8EB2D58CC8AAF4713391 /* STCommunication.h */,
+				F41AFC555A2EAC7B8B0F5B3D9C236DE2 /* STCommunication.m */,
+				5BD0EB684DDC5E22A5D2A18763F5A93D /* STCommunicationPlugin.h */,
+				4FE83F84F54C85D4A516BDCAA021F1DC /* STCommunicationPlugin.m */,
+				6A435A04EC156ABD3BF5E2D2F8D9A649 /* STSchemalRule.h */,
+				452825624F44FB7D3D4FA121C6518538 /* STSchemalRule.m */,
+			);
+			name = Communication;
+			sourceTree = "<group>";
+		};
+		851E0E218C3A7B3AD9B3C4779079ED0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4EE93C0C1A31893CB8B0E7F405CCE76 /* SSZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		890BF165B689C94231ECEE6228B63FF7 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				5AE03DFEED419DFBFB27B24CFE4A3FFA /* STBSPatch.h */,
+				8F668B2823FC692E7520D12A32AB548E /* STBSPatch.m */,
+				F2EBC1D6344D46E35425D4A3F440D5B7 /* STThredUtil.h */,
+				B9C6AE590CAF0C68B6D527508ABD3594 /* STThredUtil.m */,
+			);
+			name = Thread;
+			sourceTree = "<group>";
+		};
+		929D7FBA2F888D6A5D3BD69843CCBB05 /* LibraryBaseBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				5A05A72E29E97BE81A02D0EE095F7B15 /* STBaseBusiness.h */,
+				9FB15188D6A3D8D99D1C9003787AB9FA /* STBus.h */,
+				1CCA395E142B613E2BD6B9706F035647 /* STBus.m */,
+				FB15C1F75D1F4AE002BCF0A49F64A815 /* STBusObject.h */,
+				5CC70FB5A9BBAD7F4B9A61D8F206EC6B /* STBusObject.m */,
+				82BF673EEFD33CB15BA3790CBAEC4CB2 /* Communication */,
+				EEE3160CA5D7AFBD3C7265F2EAB14459 /* Pod */,
+				FC3468BE63762B1F59E2E143AC75C049 /* Support Files */,
+			);
+			name = LibraryBaseBusiness;
+			path = ../../../LibraryBaseBusiness;
+			sourceTree = "<group>";
+		};
+		938F6A716507F9287D6862B970697A45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5AA66669B9F2295A2EB0AE06C873FF9 /* SSZipArchive.modulemap */,
+				CFF6006416019D70CF7168938F353F68 /* SSZipArchive-dummy.m */,
+				8331D094E2014E6E9713705335D74786 /* SSZipArchive-prefix.pch */,
+				8FBB26EC944F035E6A292D3D08BB7666 /* SSZipArchive-umbrella.h */,
+				792CA8572D3493AB25E16CE9428822E2 /* SSZipArchive.debug.xcconfig */,
+				7291FAE7F40E5E61282258C0E7D566DF /* SSZipArchive.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		C24BB7FB0EC101596BE8503F7EE4DC4E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DD40FE925239EE8A1C9B40ADEABB38ED /* STJSONSerialization.h */,
+				CAE57EB2F27B20CEA56175349B530A3D /* STJSONSerialization.m */,
+				BF33FD4DD18B94F4A31B6402DB058C83 /* STRNUnZip.h */,
+				7F37618F5A96767B62B472A16A21D8FE /* STRNUnZip.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				02CB4ACFC85F4D6E07ABB8CC9F045FA0 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				851E0E218C3A7B3AD9B3C4779079ED0F /* Pods */,
+				E662FE66B9C3181DB2C7B758EC8BE516 /* Products */,
+				1190A1D560D7C1FAE67010F71953CE06 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF21AB1E24DDFD7A84857B413032E383 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				542829D3152F00818CCA02B181E1D94B /* LibraryFoundation-dummy.m */,
+				402FCA263313FE8C624FB5ED7E723FDE /* LibraryFoundation-prefix.pch */,
+				92F1234311A68C3F7C73FFE5D0498CBA /* LibraryFoundation.debug.xcconfig */,
+				6542FB7F21D10C75CB35221FA89751B9 /* LibraryFoundation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../LibraryHybridWebView/Example/Pods/Target Support Files/LibraryFoundation";
+			sourceTree = "<group>";
+		};
+		D2D430E7A03071CFBF131C09C7D2492C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3624BE1891EABD3A9777A91AFF0CE2BC /* STDragNavigationController.h */,
+				2C5CCB4C39C2E1E1742CE72BEECA8256 /* STDragNavigationController.m */,
+				E1DA1A120B206BCADA59C4509C611968 /* STLeftDragPanGestureRecognizer.h */,
+				EEB93B165C0BA59149160FBC763545D3 /* STLeftDragPanGestureRecognizer.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		D4EE93C0C1A31893CB8B0E7F405CCE76 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				FD5D0731CF9E5D8418790E9AE78C4315 /* aes.h */,
+				FBC4B109F3980385C5BAC7E2FC1F10D3 /* aes_ni.c */,
+				F3CD3725C22817F6C98645F284B236E6 /* aes_ni.h */,
+				C261407A96FC4C1BFA760695CE7B5816 /* aescrypt.c */,
+				FEA8CD287D94C3BB82D153938879C569 /* aeskey.c */,
+				B6BFC67BE0C7296F1A0FE36B8B6D1081 /* aesopt.h */,
+				EF92C0EAB79BB7F61E8FD0A529173916 /* aestab.c */,
+				C4C990DC76C3C3C2FB2219110D494FA2 /* aestab.h */,
+				6AB05DE1EE27F28996C1508C079571E4 /* brg_endian.h */,
+				1C4392A543718F94588B1E3CDC025B17 /* brg_types.h */,
+				59C38E85932255FEA4538C0F233FC65B /* crypt.c */,
+				C6A78CD8BAF159181A909A806AA0E677 /* crypt.h */,
+				2BC7311C95C3F7A248A3913F5DD54E04 /* fileenc.c */,
+				CE90B870BA69129D1E2B3966B33E14A9 /* fileenc.h */,
+				BBC6D97E8F610426235077D5B5EFCDB4 /* hmac.c */,
+				8754C12E0934A46267D7A7095F80EBB7 /* hmac.h */,
+				DF41C9694F668D60CF58BBE6E4DB65BF /* ioapi.c */,
+				D1E201A632A431906719AD5B3133E26F /* ioapi.h */,
+				AA8CD68A28FF66F8F16C2208D85D5CB3 /* ioapi_buf.c */,
+				2FEB2C6FCFABB3A171CF31450ABE2E0C /* ioapi_buf.h */,
+				17D854A7B221FCF633F0673D4CEFA414 /* ioapi_mem.c */,
+				F1A588BBD87E5A251866D87987B34B8E /* ioapi_mem.h */,
+				6603D9E8ADE645C0AE39C8A8DB20B856 /* minishared.c */,
+				E0D43B385BC820B5D8767FF80CABDC0D /* minishared.h */,
+				7E45A7DEAC99A9915617B40E190BF0D4 /* prng.c */,
+				E7799163ABBBD0E3FC2557A0083D6827 /* prng.h */,
+				CE4C23367FB686997303D576C0D64F5B /* pwd2key.c */,
+				9581BBC8E8C40720D28661E0AB373193 /* pwd2key.h */,
+				261B3A8DD6D296DE3565FEB63824D3FF /* sha1.c */,
+				20CCF242F4116CF58B550DEAF1041DC1 /* sha1.h */,
+				B0CF73FAF7E71BB160711BFF1ECA6605 /* SSZipArchive.h */,
+				962C56C887D4396A97116AE668725C68 /* SSZipArchive.m */,
+				8FAAB114880A63B6BD68E2B9B8EDB623 /* SSZipCommon.h */,
+				5F1FCFB776BD5ADAC281C469430A660D /* unzip.c */,
+				0CF29FD67F8D88F7A839F1A744F1D053 /* unzip.h */,
+				C3E4FC2CA756E0952DCA0CBCD24117CF /* zip.c */,
+				02C6CB790C14CF28BBC56D49077B5D43 /* zip.h */,
+				057D550B4C33693E2B34673B9E394146 /* ZipArchive.h */,
+				938F6A716507F9287D6862B970697A45 /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBE6F5BFF02CC85D126A3939E3C20593 /* LibraryHybridWebView */ = {
+			isa = PBXGroup;
+			children = (
+				E0F5AE27F6FBBE028F534D6445BF4721 /* ReplaceMe.m */,
+				4F9EC6964835677ACAADF00B3CA791B6 /* STHybirdViewController.h */,
+				6E364A2010A00FF3DA8C4260A34A3934 /* STHybirdViewController.m */,
+				3A685CD45E76CFFAE0CADCA27B7E5FAA /* STWKWebViewController.h */,
+				446CC8D32C2F2574C5CF4D64DF87DC6A /* STWKWebViewController.m */,
+				6D3745DB2FABAD9C46D448D04BC03A50 /* Pod */,
+				F9C8F5BC88DFAF8F9962096C0EA55562 /* Support Files */,
+			);
+			name = LibraryHybridWebView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E04C9C91A6962533EA2305A4C39B91E3 /* Pods-LibraryHybridWebView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9E68A97E897158071C927A7EA2F0FA56 /* Pods-LibraryHybridWebView_Tests-acknowledgements.markdown */,
+				A46238FD230E9CF8A82A3E28F8A4416C /* Pods-LibraryHybridWebView_Tests-acknowledgements.plist */,
+				3CDEA012EA51D9778D518F8AF8AF2F10 /* Pods-LibraryHybridWebView_Tests-dummy.m */,
+				A56E049A77611F16E26916013C80E6D7 /* Pods-LibraryHybridWebView_Tests.debug.xcconfig */,
+				E637AE09221F2646901BDA9F47ED7802 /* Pods-LibraryHybridWebView_Tests.release.xcconfig */,
+			);
+			name = "Pods-LibraryHybridWebView_Tests";
+			path = "Target Support Files/Pods-LibraryHybridWebView_Tests";
+			sourceTree = "<group>";
+		};
+		E662FE66B9C3181DB2C7B758EC8BE516 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7C8F977A7A919AF8FC34A7C10D38D4B /* libLibraryBaseBusiness.a */,
+				EEFC43E1AE8E3C07B121265906D1705B /* libLibraryFoundation.a */,
+				223607C4AF3AD5D8D8CF7D9BE1673791 /* libLibraryHybridWebView.a */,
+				530DE0E91C69BDF34686327DEE2D2439 /* libPods-LibraryHybridWebView_Example.a */,
+				539D281073A61050734A9C2E2701E12C /* libPods-LibraryHybridWebView_Tests.a */,
+				91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E765B1D8C17EBD650F21B31E1D6D90B1 /* Pods-LibraryHybridWebView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				29A932A55588850A5533CCE80E5C223B /* Pods-LibraryHybridWebView_Example-acknowledgements.markdown */,
+				956BA727BF9D93F6CA85F643DDDB3D6D /* Pods-LibraryHybridWebView_Example-acknowledgements.plist */,
+				F591CA08CBBBE77DB28A1F2DB9D64140 /* Pods-LibraryHybridWebView_Example-dummy.m */,
+				9D25C94EEC4BA372CDD85B8E3D481A14 /* Pods-LibraryHybridWebView_Example.debug.xcconfig */,
+				C61056B2ADFBFAE94130E5B66B10CA9E /* Pods-LibraryHybridWebView_Example.release.xcconfig */,
+			);
+			name = "Pods-LibraryHybridWebView_Example";
+			path = "Target Support Files/Pods-LibraryHybridWebView_Example";
+			sourceTree = "<group>";
+		};
+		EEE3160CA5D7AFBD3C7265F2EAB14459 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EF8781E582E2C9BEA775B53C85B1060F /* LibraryBaseBusiness.podspec */,
+				ED449B18268078C220246F89654D5065 /* LICENSE */,
+				13B602D150164E66FF61C442110273A3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F89D3CC6F756D2962C79C7828B524ADD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				26D1D0A336C70F4F31B3FE963CF5050A /* NSString+Md5.h */,
+				0734BF7915D398C8BEBA61729A1220FB /* NSString+Md5.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		F9C8F5BC88DFAF8F9962096C0EA55562 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F10986204C90C5250B9E6CE6B5882EF /* LibraryHybridWebView-dummy.m */,
+				C135EBEFC954EC3F09F7BC1DF0996868 /* LibraryHybridWebView-prefix.pch */,
+				DC3E3E8FBD0089878E0C0D86C82B8272 /* LibraryHybridWebView.debug.xcconfig */,
+				27D3D38E15C9213005DA740280CCA725 /* LibraryHybridWebView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LibraryHybridWebView";
+			sourceTree = "<group>";
+		};
+		FC3468BE63762B1F59E2E143AC75C049 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89CB9418434038B5D387A885A6B881D /* LibraryBaseBusiness-dummy.m */,
+				173A27F7A2F6E60553B54D937F8BF20A /* LibraryBaseBusiness-prefix.pch */,
+				6F1305710355A8B454D940308F58E688 /* LibraryBaseBusiness.debug.xcconfig */,
+				61F99752A71B7ED915208E85F2B9F26D /* LibraryBaseBusiness.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../LibraryHybridWebView/Example/Pods/Target Support Files/LibraryBaseBusiness";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3BE2DFF3DAC3440B778626E8BAE1C2A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4061633FD7D65CBFC6EC6C3DE48533 /* STBaseBusiness.h in Headers */,
+				B6EBC47DA52B4D581CBCA93B4CFDB1A1 /* STBus.h in Headers */,
+				F1B8A3061148961F008ED05503E721B5 /* STBusObject.h in Headers */,
+				D39A33549B9CE136124F510BA4396EC4 /* STCommunication.h in Headers */,
+				67040CEA55E9E8F3EE168D1804829577 /* STCommunicationPlugin.h in Headers */,
+				A82ED4B02B1C9D267FFA697F2091D3EE /* STSchemalRule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4B872E0E6F5E647A73C789B9839973 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7E842E470B51524EC29265D40BDBA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7241CA542754527DEC55A16F8E766E39 /* NSArray+STExtension.h in Headers */,
+				F4879999D4D7589BCA9372931A9D3806 /* NSData+STExtension.h in Headers */,
+				682140E70E4CAA88756D5A37B7E70DE5 /* NSDate+STExtension.h in Headers */,
+				BFFA189CC0F9681CA3CDD9862173D807 /* NSDictionary+STExtension.h in Headers */,
+				C0753061F68044B92FC107E66E809C6A /* NSFileManager+STExtension.h in Headers */,
+				27AF3B1E44AE82EFF54040911DE6D6AF /* NSNotificationCenter+STExtension.h in Headers */,
+				7A3EC9323C6AE281E1221414AFBB96D5 /* NSString+Md5.h in Headers */,
+				AB5FBB4E9242AF668C69E5EF81420E4A /* NSString+STExtension.h in Headers */,
+				DE379A8FEDF604F5507B280675480A6F /* NSUserDefaults+STExtension.h in Headers */,
+				7CBAC167FD68351B791FD6BDBE1A627E /* STBSPatch.h in Headers */,
+				90110FA8EF369C08242946390682F477 /* STDragNavigationController.h in Headers */,
+				C58C4CB600C2B7140E50CC122B5D5FE6 /* STJSONSerialization.h in Headers */,
+				DCEB8B22E9EFEF5E791DD037C9917F7A /* STLeftDragPanGestureRecognizer.h in Headers */,
+				31E276AFAEEBD65B96B2DF9819093D6F /* STMacros.h in Headers */,
+				AD0FC23F32BA66911B71CE727965B998 /* STNavViewController.h in Headers */,
+				F493D04142908B5F4846BA25790B9BFA /* StringUtil.h in Headers */,
+				3F8401E03A16D7C4D2534B4665A3FF5E /* STRNFileManager.h in Headers */,
+				12D0A4C3E58E0B3AD0F2E34BD64DEA64 /* STRNUnZip.h in Headers */,
+				34A8862ECDE75D15ABCD7B9C0B24E918 /* STSingleton.h in Headers */,
+				55296B9E7DCEEBA2EA7A79BDFD02B030 /* STThredUtil.h in Headers */,
+				B547172317CC9A4973E73C4B4EF2D879 /* UIDevice+STExtension.h in Headers */,
+				261F5071D560C709288E5F052E273CE9 /* UIView+STExtension.h in Headers */,
+				79F6E7089E876CD960E9BA02E0464E59 /* UIViewController+TopMostViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6698D6ADA18F5192742DD7D2696A9497 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2D6FE2443370FD3A68A0CF3F5AA1F2 /* aes.h in Headers */,
+				BF8F54B91D3FA6C1C4FAF8C3E2341ECB /* aes_ni.h in Headers */,
+				4CC697B6E64F05C09D29B58182E3AB44 /* aesopt.h in Headers */,
+				577AD1281E093F966D3FD3E1F3A362ED /* aestab.h in Headers */,
+				65F354A7F6A59C3D201491F646D91B44 /* brg_endian.h in Headers */,
+				208ED11B75FD640E7B61B64F79B682B2 /* brg_types.h in Headers */,
+				C0FD9FA57CA123B5169DA28D0E743652 /* crypt.h in Headers */,
+				82FD3CCFCE01A57E76A39B0E74CFD8B8 /* fileenc.h in Headers */,
+				4F2A2815289CC8C8106B6193C59FA1CD /* hmac.h in Headers */,
+				F6D6B0009049EF375CE88B1A8CB3FB1C /* ioapi.h in Headers */,
+				225CC271987F11DAE0F54A467D539841 /* ioapi_buf.h in Headers */,
+				C4695BEED9A3A51A9729AD87432F16FB /* ioapi_mem.h in Headers */,
+				07BFEB06AC4F869947E16682E8CB9EE1 /* minishared.h in Headers */,
+				2CCD54DBCE3B23715FEA74AD8E03CE3E /* prng.h in Headers */,
+				547DB3A10BB3E129867582C6117BD4FB /* pwd2key.h in Headers */,
+				2D8A88A98086D05C12C9B79BA48DBCBA /* sha1.h in Headers */,
+				C7DE44A626644ED0D7DE17718104D698 /* SSZipArchive-umbrella.h in Headers */,
+				C4338374996D7B807DE6D7A3B178B379 /* SSZipArchive.h in Headers */,
+				B3E7255DC1D36C9095744FB78B55565D /* SSZipCommon.h in Headers */,
+				1919DA520FED55CD6C2DFBDAF970DAAA /* unzip.h in Headers */,
+				00F5757B2C03AFF1BEC3091FAF793CF6 /* zip.h in Headers */,
+				292F4F90ECCE63838A201431D80DD4D1 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84C1685102FAE9BF3259FDF0C30DDB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB584B94EC0035FD380EE44618331D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B1F165D8961DC6A7EDBB81353D5EBC /* STHybirdViewController.h in Headers */,
+				E973561F89A5BB487A68BB73C1F59438 /* STWKWebViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		234910E251992905EFD5110E6492B6CA /* Pods-LibraryHybridWebView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D4EAF9BCE94772147596DC3F31164C /* Build configuration list for PBXNativeTarget "Pods-LibraryHybridWebView_Example" */;
+			buildPhases = (
+				F84C1685102FAE9BF3259FDF0C30DDB2 /* Headers */,
+				B5C33F4DC69630D32E4AE0B0F42422D1 /* Sources */,
+				469A3D248F47B6DB4F1CB726C9EE8B4E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BDB998F3409FCC2688D4F0F95A24813 /* PBXTargetDependency */,
+				45789D255FF09E97C6C5900FF854246D /* PBXTargetDependency */,
+				5E762C42C50074228940236D095B9F51 /* PBXTargetDependency */,
+				DBA79672C67E46D6164A22C073270CA7 /* PBXTargetDependency */,
+			);
+			name = "Pods-LibraryHybridWebView_Example";
+			productName = "Pods-LibraryHybridWebView_Example";
+			productReference = 530DE0E91C69BDF34686327DEE2D2439 /* libPods-LibraryHybridWebView_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		578AB7F5BA0C94399B4CF533F5C532AA /* LibraryFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DDA6002B804CA588476CE7FB4C7C4B /* Build configuration list for PBXNativeTarget "LibraryFoundation" */;
+			buildPhases = (
+				5D7E842E470B51524EC29265D40BDBA3 /* Headers */,
+				F1BAA4AE4993EA877A2AEC983DB02005 /* Sources */,
+				027C82B536BE6D0379224E649E63B7B2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75856DE0CF5F4A79154150C632045EA8 /* PBXTargetDependency */,
+			);
+			name = LibraryFoundation;
+			productName = LibraryFoundation;
+			productReference = EEFC43E1AE8E3C07B121265906D1705B /* libLibraryFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6DC86A980029D0A473892775A947AC92 /* LibraryBaseBusiness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156412267B8BD48786CF87AF0D66DEAF /* Build configuration list for PBXNativeTarget "LibraryBaseBusiness" */;
+			buildPhases = (
+				3BE2DFF3DAC3440B778626E8BAE1C2A5 /* Headers */,
+				2F4CDB088793A0A84C93729858CC9E69 /* Sources */,
+				9AA5AF50D3E0719CFE88A1106FB0AC03 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1B82219724D31AA7D8BD66DCC00C5E7 /* PBXTargetDependency */,
+			);
+			name = LibraryBaseBusiness;
+			productName = LibraryBaseBusiness;
+			productReference = D7C8F977A7A919AF8FC34A7C10D38D4B /* libLibraryBaseBusiness.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9E1A8E57CB987745907E17D26EB11ACE /* LibraryHybridWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E125741ED3BDDB4D30711865698FFB1 /* Build configuration list for PBXNativeTarget "LibraryHybridWebView" */;
+			buildPhases = (
+				FBB584B94EC0035FD380EE44618331D6 /* Headers */,
+				CB4878E3D4A41E1C390011AE932DBFF8 /* Sources */,
+				D3C76E289D2A63802CD9C566EB964580 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816E97EDC6DE74C7D9E75F14831431BD /* PBXTargetDependency */,
+				37225569DB099688A1C0D36C2A329DA3 /* PBXTargetDependency */,
+			);
+			name = LibraryHybridWebView;
+			productName = LibraryHybridWebView;
+			productReference = 223607C4AF3AD5D8D8CF7D9BE1673791 /* libLibraryHybridWebView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C00B9E29C55E1F7972F2E45B6D37900F /* Pods-LibraryHybridWebView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BB5B65ABB5D0E37F03B20889F121CC /* Build configuration list for PBXNativeTarget "Pods-LibraryHybridWebView_Tests" */;
+			buildPhases = (
+				3F4B872E0E6F5E647A73C789B9839973 /* Headers */,
+				923A0C9ECA72F2D80D5CCADF5766DCD0 /* Sources */,
+				AC77086870441C3D15D72E96C0EBC4E4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E189B2C1B88415C39327DE11F88E28 /* PBXTargetDependency */,
+			);
+			name = "Pods-LibraryHybridWebView_Tests";
+			productName = "Pods-LibraryHybridWebView_Tests";
+			productReference = 539D281073A61050734A9C2E2701E12C /* libPods-LibraryHybridWebView_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44EC03C02892091BE8FF37946E5967DC /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				6698D6ADA18F5192742DD7D2696A9497 /* Headers */,
+				ADE020C3478B6F564FCFBB1107AA8875 /* Sources */,
+				BEFE3475285ABFE57BC3EC7F21CC00CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = 91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E662FE66B9C3181DB2C7B758EC8BE516 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DC86A980029D0A473892775A947AC92 /* LibraryBaseBusiness */,
+				578AB7F5BA0C94399B4CF533F5C532AA /* LibraryFoundation */,
+				9E1A8E57CB987745907E17D26EB11ACE /* LibraryHybridWebView */,
+				234910E251992905EFD5110E6492B6CA /* Pods-LibraryHybridWebView_Example */,
+				C00B9E29C55E1F7972F2E45B6D37900F /* Pods-LibraryHybridWebView_Tests */,
+				F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F4CDB088793A0A84C93729858CC9E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B2D121A2E4A557BD18A3C43BA7933E /* LibraryBaseBusiness-dummy.m in Sources */,
+				AAD92878FADAABE3FA1F612194035670 /* STBus.m in Sources */,
+				444D4A0D93A9EAEE007C5341BBCF9E3E /* STBusObject.m in Sources */,
+				E79B29927314B73A8883F4F4379CCA0B /* STCommunication.m in Sources */,
+				B5B1886A6537AFED0120BA16D8218FD9 /* STCommunicationPlugin.m in Sources */,
+				E79150FEDEF9A723C157A96E5FD5F119 /* STSchemalRule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923A0C9ECA72F2D80D5CCADF5766DCD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1256DE350A84A708B502DD2DA07D3CC4 /* Pods-LibraryHybridWebView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE020C3478B6F564FCFBB1107AA8875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4B7D152B0A0F10430F72F95899BDAD /* aes_ni.c in Sources */,
+				85EC575E7B461EAB3AAA14D4ED57DB3A /* aescrypt.c in Sources */,
+				02E99FB88DACF3E55CB94563547732BA /* aeskey.c in Sources */,
+				FB4E3869A8D2CE9695BDAE08379B1AE5 /* aestab.c in Sources */,
+				4786A161078811D637F35A0B2CF06B8D /* crypt.c in Sources */,
+				0DF65E40528FDBB1475B58DDF11C784F /* fileenc.c in Sources */,
+				283BF4A12B99DFEC11D26166CADFF662 /* hmac.c in Sources */,
+				20EBB9EE62E83FE7EDD54D935C5CBF06 /* ioapi.c in Sources */,
+				DCDA498A5B466E69C06E37566575CAB0 /* ioapi_buf.c in Sources */,
+				0227B2E246A4FE3E94C5E4AA978CECB7 /* ioapi_mem.c in Sources */,
+				05799D1EE7923AA2464C1F707B84CED6 /* minishared.c in Sources */,
+				13BC582426E6900A29F7CF7DCE011356 /* prng.c in Sources */,
+				86D9700B312694AA876C7D4BDBF433ED /* pwd2key.c in Sources */,
+				E50F3C413B215FC5FC76CEED61830FC3 /* sha1.c in Sources */,
+				3FAEC8F99E0C61C44FE317FDB17AF7A1 /* SSZipArchive-dummy.m in Sources */,
+				FEB3598B314D9658ACA97446F7D9A6D7 /* SSZipArchive.m in Sources */,
+				356536CDFC1BEB634A4ECD66401536A1 /* unzip.c in Sources */,
+				50129CDF72A135F07B66BC04EF5FDE90 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C33F4DC69630D32E4AE0B0F42422D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5564CE43D789DBDABFC9F95FA189363 /* Pods-LibraryHybridWebView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4878E3D4A41E1C390011AE932DBFF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CBD9839AAD70205B8933815A8EBA90 /* LibraryHybridWebView-dummy.m in Sources */,
+				6895C5B1CF41FF67E5E0E503F53114E1 /* ReplaceMe.m in Sources */,
+				54293947C1764EB828B3C5A05F5B3BAF /* STHybirdViewController.m in Sources */,
+				6E5829AF4EE08E4F637D4BC79CEC536E /* STWKWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1BAA4AE4993EA877A2AEC983DB02005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1271AB1023C04DDB61CB3D5297A287E7 /* LibraryFoundation-dummy.m in Sources */,
+				20871570918482C48D7F4D5E81C60AC2 /* NSArray+STExtension.m in Sources */,
+				2568CB9530694B6C5B779BE8B7032FB5 /* NSData+STExtension.m in Sources */,
+				708EC4B2AFD92626BA746801BEAF24A1 /* NSDate+STExtension.m in Sources */,
+				5FDBBD12F3D21001975B333C35C0C08F /* NSDictionary+STExtension.m in Sources */,
+				4554872D35A568731C31BEFA0623DE1E /* NSFileManager+STExtension.m in Sources */,
+				D086F91A6D41C445430ADD5EE18D0816 /* NSNotificationCenter+STExtension.m in Sources */,
+				12C04B29CE230E93A2933A3EC58D6AA4 /* NSString+Md5.m in Sources */,
+				47190D7693DE798B71BFF8FD4DB738BD /* NSString+STExtension.m in Sources */,
+				09D0A96146A75DBC26C665BF2771444D /* NSUserDefaults+STExtension.m in Sources */,
+				B3DBE223288274B09D527C328850B5BA /* STBSPatch.m in Sources */,
+				84515860A4AD37405647D4A3E9781F4D /* STDragNavigationController.m in Sources */,
+				9B1C108CCD0B38622A27F1936B1B0660 /* STJSONSerialization.m in Sources */,
+				339E2869739804F069CB2E5B00DAE53D /* STLeftDragPanGestureRecognizer.m in Sources */,
+				AD02A9B007D67052487C0CF26B42149B /* STNavViewController.m in Sources */,
+				29F3186B92076DD3E771427826E435AE /* StringUtil.m in Sources */,
+				2583C3497FA62C55FBA629B883F2BC2C /* STRNFileManager.m in Sources */,
+				47BD396139ADEF901313DB651379B7A2 /* STRNUnZip.m in Sources */,
+				4C209CF63183A68668B30F7E81300BBA /* STThredUtil.m in Sources */,
+				8F3160D6F74D873EE9329C48B8EF6F21 /* UIDevice+STExtension.m in Sources */,
+				90A21E6B722C158F4292FD11D300EDA7 /* UIView+STExtension.m in Sources */,
+				227528FDC4C12CDCF4D9E69610EB9EB5 /* UIViewController+TopMostViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BDB998F3409FCC2688D4F0F95A24813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LibraryBaseBusiness;
+			target = 6DC86A980029D0A473892775A947AC92 /* LibraryBaseBusiness */;
+			targetProxy = FAA30E2B080AA249C23DDD3FCB85E712 /* PBXContainerItemProxy */;
+		};
+		37225569DB099688A1C0D36C2A329DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LibraryFoundation;
+			target = 578AB7F5BA0C94399B4CF533F5C532AA /* LibraryFoundation */;
+			targetProxy = 10D3E7589081B565022B9028E7AB7BD8 /* PBXContainerItemProxy */;
+		};
+		45789D255FF09E97C6C5900FF854246D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LibraryFoundation;
+			target = 578AB7F5BA0C94399B4CF533F5C532AA /* LibraryFoundation */;
+			targetProxy = 32C7974B199544D248B7E29F0913200E /* PBXContainerItemProxy */;
+		};
+		5E762C42C50074228940236D095B9F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LibraryHybridWebView;
+			target = 9E1A8E57CB987745907E17D26EB11ACE /* LibraryHybridWebView */;
+			targetProxy = D0F336061735525388304ECEE963A99B /* PBXContainerItemProxy */;
+		};
+		75856DE0CF5F4A79154150C632045EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
+			targetProxy = 7A6905AAFD347E05E6E8E4851220BA38 /* PBXContainerItemProxy */;
+		};
+		816E97EDC6DE74C7D9E75F14831431BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LibraryBaseBusiness;
+			target = 6DC86A980029D0A473892775A947AC92 /* LibraryBaseBusiness */;
+			targetProxy = 9F6C3270517E6BF5BAF9B29DE2D48563 /* PBXContainerItemProxy */;
+		};
+		C1B82219724D31AA7D8BD66DCC00C5E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LibraryFoundation;
+			target = 578AB7F5BA0C94399B4CF533F5C532AA /* LibraryFoundation */;
+			targetProxy = 4C541703A09B590B1A1FFD216C4F0010 /* PBXContainerItemProxy */;
+		};
+		D3E189B2C1B88415C39327DE11F88E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LibraryHybridWebView_Example";
+			target = 234910E251992905EFD5110E6492B6CA /* Pods-LibraryHybridWebView_Example */;
+			targetProxy = 18D05C45759633D418F978289ABF44A2 /* PBXContainerItemProxy */;
+		};
+		DBA79672C67E46D6164A22C073270CA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
+			targetProxy = E16994D4ED87618B423724E0F1E4AEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0617752181759E584B1A763748D327BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F99752A71B7ED915208E85F2B9F26D /* LibraryBaseBusiness.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LibraryBaseBusiness/LibraryBaseBusiness-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LibraryBaseBusiness;
+				PRODUCT_NAME = LibraryBaseBusiness;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F7985CB7573E47192B3C46925717AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E637AE09221F2646901BDA9F47ED7802 /* Pods-LibraryHybridWebView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DD698C6BEE6672F5A9165D7A9AE6A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7291FAE7F40E5E61282258C0E7D566DF /* SSZipArchive.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MODULEMAP_FILE = Headers/Public/SSZipArchive/SSZipArchive.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22712B576E1D07344D771CF66D5996BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56E049A77611F16E26916013C80E6D7 /* Pods-LibraryHybridWebView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42EEBD744AF3C759ABEB5FCAC02BEA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D25C94EEC4BA372CDD85B8E3D481A14 /* Pods-LibraryHybridWebView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		82C56648A734A603F0932B4D36230CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D3D38E15C9213005DA740280CCA725 /* LibraryHybridWebView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LibraryHybridWebView/LibraryHybridWebView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LibraryHybridWebView;
+				PRODUCT_NAME = LibraryHybridWebView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		914A605DAC073CEB25F9E5C33645CE9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792CA8572D3493AB25E16CE9428822E2 /* SSZipArchive.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MODULEMAP_FILE = Headers/Public/SSZipArchive/SSZipArchive.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AECD69B102F01A6C9DF5C6FAA56731D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3E3E8FBD0089878E0C0D86C82B8272 /* LibraryHybridWebView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LibraryHybridWebView/LibraryHybridWebView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LibraryHybridWebView;
+				PRODUCT_NAME = LibraryHybridWebView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B132AF603CB57C24B475521167444C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1305710355A8B454D940308F58E688 /* LibraryBaseBusiness.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LibraryBaseBusiness/LibraryBaseBusiness-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LibraryBaseBusiness;
+				PRODUCT_NAME = LibraryBaseBusiness;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B495B939B4CFAAE9C165CB3F3F553A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61056B2ADFBFAE94130E5B66B10CA9E /* Pods-LibraryHybridWebView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9EBE32582D6A39F0F46143058BE6578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F1234311A68C3F7C73FFE5D0498CBA /* LibraryFoundation.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LibraryFoundation/LibraryFoundation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LibraryFoundation;
+				PRODUCT_NAME = LibraryFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEEFB57EA969E00D0C07607A6ADEA24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6542FB7F21D10C75CB35221FA89751B9 /* LibraryFoundation.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LibraryFoundation/LibraryFoundation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LibraryFoundation;
+				PRODUCT_NAME = LibraryFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156412267B8BD48786CF87AF0D66DEAF /* Build configuration list for PBXNativeTarget "LibraryBaseBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B132AF603CB57C24B475521167444C32 /* Debug */,
+				0617752181759E584B1A763748D327BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44EC03C02892091BE8FF37946E5967DC /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914A605DAC073CEB25F9E5C33645CE9D /* Debug */,
+				1DD698C6BEE6672F5A9165D7A9AE6A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DDA6002B804CA588476CE7FB4C7C4B /* Build configuration list for PBXNativeTarget "LibraryFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9EBE32582D6A39F0F46143058BE6578 /* Debug */,
+				DEEFB57EA969E00D0C07607A6ADEA24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E125741ED3BDDB4D30711865698FFB1 /* Build configuration list for PBXNativeTarget "LibraryHybridWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECD69B102F01A6C9DF5C6FAA56731D9 /* Debug */,
+				82C56648A734A603F0932B4D36230CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BB5B65ABB5D0E37F03B20889F121CC /* Build configuration list for PBXNativeTarget "Pods-LibraryHybridWebView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22712B576E1D07344D771CF66D5996BE /* Debug */,
+				0F7985CB7573E47192B3C46925717AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D4EAF9BCE94772147596DC3F31164C /* Build configuration list for PBXNativeTarget "Pods-LibraryHybridWebView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EEBD744AF3C759ABEB5FCAC02BEA39 /* Debug */,
+				B495B939B4CFAAE9C165CB3F3F553A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

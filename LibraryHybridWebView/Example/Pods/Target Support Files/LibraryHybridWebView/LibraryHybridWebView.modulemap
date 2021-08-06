@@ -1,0 +1,6 @@
+framework module LibraryHybridWebView {
+  umbrella header "LibraryHybridWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}

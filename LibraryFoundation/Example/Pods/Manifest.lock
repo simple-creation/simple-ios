@@ -1,0 +1,47 @@
+PODS:
+  - LibraryFoundation (0.1.0):
+    - LibraryFoundation/Communication (= 0.1.0)
+    - LibraryFoundation/FileManager (= 0.1.0)
+    - LibraryFoundation/Foundation (= 0.1.0)
+    - LibraryFoundation/Navigation (= 0.1.0)
+    - LibraryFoundation/STExtensions (= 0.1.0)
+    - LibraryFoundation/Thread (= 0.1.0)
+    - LibraryFoundation/Tools (= 0.1.0)
+    - LibraryFoundation/UIKit (= 0.1.0)
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Communication (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/FileManager (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Foundation (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Navigation (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/STExtensions (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Thread (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Tools (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/UIKit (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - SSZipArchive (2.1.4)
+
+DEPENDENCIES:
+  - LibraryFoundation (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  LibraryFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LibraryFoundation: 8bd0282e9dcd5274c384cecfd057d3690c47f70a
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+
+PODFILE CHECKSUM: ce22ec459fd5f776d2871c59d4c810531fee335c
+
+COCOAPODS: 1.7.1

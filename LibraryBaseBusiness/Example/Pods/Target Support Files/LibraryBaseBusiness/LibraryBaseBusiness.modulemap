@@ -1,0 +1,6 @@
+framework module LibraryBaseBusiness {
+  umbrella header "LibraryBaseBusiness-umbrella.h"
+
+  export *
+  module * { export * }
+}

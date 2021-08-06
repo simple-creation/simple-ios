@@ -1,0 +1,16 @@
+PODS:
+  - LibraryBaseBusiness (0.1.0)
+
+DEPENDENCIES:
+  - LibraryBaseBusiness (from `../`)
+
+EXTERNAL SOURCES:
+  LibraryBaseBusiness:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LibraryBaseBusiness: 00e4f08bac75e8be318e448a7b2bbeb7b73eeb86
+
+PODFILE CHECKSUM: 9c149149512e12351c240904279c6cac3897e971
+
+COCOAPODS: 1.7.1

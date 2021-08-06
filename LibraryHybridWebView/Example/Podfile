@@ -1,0 +1,15 @@
+
+platform :ios, '8.0'
+
+target 'LibraryHybridWebView_Example' do
+  pod 'LibraryHybridWebView', :path => '../'
+  pod 'LibraryFoundation', :path => '../../LibraryFoundation'
+  pod 'LibraryBaseBusiness', :path => '../../LibraryBaseBusiness'
+
+  
+  target 'LibraryHybridWebView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

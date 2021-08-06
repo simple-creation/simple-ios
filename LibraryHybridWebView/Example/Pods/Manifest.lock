@@ -1,0 +1,60 @@
+PODS:
+  - LibraryBaseBusiness (0.1.0):
+    - LibraryBaseBusiness/Communication (= 0.1.0)
+    - LibraryFoundation
+  - LibraryBaseBusiness/Communication (0.1.0):
+    - LibraryFoundation
+  - LibraryFoundation (0.1.0):
+    - LibraryFoundation/FileManager (= 0.1.0)
+    - LibraryFoundation/Foundation (= 0.1.0)
+    - LibraryFoundation/Navigation (= 0.1.0)
+    - LibraryFoundation/STExtensions (= 0.1.0)
+    - LibraryFoundation/Thread (= 0.1.0)
+    - LibraryFoundation/Tools (= 0.1.0)
+    - LibraryFoundation/UIKit (= 0.1.0)
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/FileManager (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Foundation (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Navigation (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/STExtensions (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Thread (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/Tools (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryFoundation/UIKit (0.1.0):
+    - SSZipArchive (= 2.1.4)
+  - LibraryHybridWebView (0.1.0):
+    - LibraryBaseBusiness
+    - LibraryFoundation
+  - SSZipArchive (2.1.4)
+
+DEPENDENCIES:
+  - LibraryBaseBusiness (from `../../LibraryBaseBusiness`)
+  - LibraryFoundation (from `../../LibraryFoundation`)
+  - LibraryHybridWebView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  LibraryBaseBusiness:
+    :path: "../../LibraryBaseBusiness"
+  LibraryFoundation:
+    :path: "../../LibraryFoundation"
+  LibraryHybridWebView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LibraryBaseBusiness: 420d03eb070cc72b2c5bbedba26159207c5d20ab
+  LibraryFoundation: 91eaae6b7a4baa76a3c422feb7a5aa294786a2b1
+  LibraryHybridWebView: ab8f973b9f87856b26d85347eb9fc43ae0d0e133
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+
+PODFILE CHECKSUM: 1e1f95ba4d63473b01b5edf5ee7626795813b983
+
+COCOAPODS: 1.10.0
