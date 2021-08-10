@@ -7,8 +7,8 @@
 //
 
 #import "STAppDelegate.h"
-#import "STWKWebViewController.h"
-#import "STBus.h"
+#import "STMainTabBarVc.h"
+
 @implementation STAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,11 +16,9 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    STWKWebViewController *wkWebView = [[STWKWebViewController alloc] init];
-    wkWebView.url = @"http://www.baidu.com";
 
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = wkWebView;
+    self.window.rootViewController = [[STMainTabBarVc alloc] init];
 
     return YES;
 }
