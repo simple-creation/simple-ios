@@ -13,6 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STWKWebViewController : UIViewController
 @property (nonatomic,copy) NSString *url;
+@property (nonatomic,strong) NSURL *localUrl;
+@property (nonatomic,copy) NSString *localPath;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

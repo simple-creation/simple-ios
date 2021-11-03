@@ -19,8 +19,11 @@
     [super viewDidLoad];
     
     STWKWebViewController *wkWebView = [[STWKWebViewController alloc] init];
-    wkWebView.tabBarItem.title = @"H5";
-    wkWebView.url = @"http://www.baidu.com";
+//    wkWebView.tabBarItem.title = @"H5";
+//    wkWebView.url = @"http://www.baidu.com";
+    NSURL *localUrl = [[NSBundle mainBundle] URLForResource:@"root" withExtension:@"html"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"root" ofType:@"html"];
+    wkWebView.localUrl = localUrl;
     [self addNavViewControllerWithImageName:@"BottomTabBar_BorrowBook" withVc: wkWebView];
 }
 

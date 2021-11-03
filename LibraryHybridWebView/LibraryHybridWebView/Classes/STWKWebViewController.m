@@ -8,6 +8,7 @@
 
 #import "STWKWebViewController.h"
 #import "STCommunication.h"
+#import "STURLProtocol.h"
 
 #define kURLPrefix          @"easygs://hybird/bridge/"
 //#define kURLString          @"http://10.32.33.2:5389/#/"
@@ -30,7 +31,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSSet *websiteDataTypes= [NSSet setWithArray:@[
+
+                            WKWebsiteDataTypeDiskCache,
+                            WKWebsiteDataTypeMemoryCache
+                            ]];
+
+    //清除所有的web信息
+    //NSSet *websiteDataTypes = [WKWebsiteDataStore allWebsiteDataTypes];
+    NSDate *dateFrom = [NSDate dateWithTimeIntervalSince1970:0];
+    [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:websiteDataTypes modifiedSince:dateFrom completionHandler:^{
+
+    }];
     self.view.backgroundColor = [UIColor whiteColor];
+    [NSURLProtocol registerClass:[STURLProtocol class]];
+    [STURLProtocol cs_registerScheme:@"cs"];
+//    [STURLProtocol cs_registerScheme:@"https"];
 
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     WKUserContentController *userController = [[WKUserContentController alloc] init];
@@ -40,7 +56,15 @@
     if (self.url) {
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
     } else {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kURLString]]];
+        if (@available(iOS 9.0, *)) {
+            
+            [self.webView loadFileURL:self.localUrl allowingReadAccessToURL:self.localUrl];
+//            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.localUrl cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:15];
+//            [self.webView loadRequest:request];
+        } else {
+
+        }
+
     }
     self.webView.navigationDelegate = self;
     self.webView.UIDelegate = self;
@@ -106,5 +130,10 @@
     }
 }
 
+- (void)dealloc {
+    self.webView = nil;
+
+
+}
 
 @end

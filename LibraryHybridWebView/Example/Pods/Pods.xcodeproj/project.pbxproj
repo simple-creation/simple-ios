@@ -86,6 +86,8 @@
 		B547172317CC9A4973E73C4B4EF2D879 /* UIDevice+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 15926DB299810F1DA9AFB0A2CA1784A2 /* UIDevice+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B5B1886A6537AFED0120BA16D8218FD9 /* STCommunicationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE83F84F54C85D4A516BDCAA021F1DC /* STCommunicationPlugin.m */; };
 		B6EBC47DA52B4D581CBCA93B4CFDB1A1 /* STBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB15188D6A3D8D99D1C9003787AB9FA /* STBus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9C385B626F3479F003B87A4 /* STURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C385B426F3479F003B87A4 /* STURLProtocol.h */; };
+		B9C385B726F3479F003B87A4 /* STURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C385B526F3479F003B87A4 /* STURLProtocol.m */; };
 		BF8F54B91D3FA6C1C4FAF8C3E2341ECB /* aes_ni.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CD3725C22817F6C98645F284B236E6 /* aes_ni.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BFFA189CC0F9681CA3CDD9862173D807 /* NSDictionary+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D834B31A95E9A61935B9AA7BC7A9AEDB /* NSDictionary+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C0753061F68044B92FC107E66E809C6A /* NSFileManager+STExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7510CE5C7C4B65F4C1EC1F3187EAED /* NSFileManager+STExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -185,24 +187,24 @@
 		057D550B4C33693E2B34673B9E394146 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
 		0734BF7915D398C8BEBA61729A1220FB /* NSString+Md5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Md5.m"; path = "LibraryFoundation/Classes/Foundation/NSString+Md5.m"; sourceTree = "<group>"; };
 		0CF29FD67F8D88F7A839F1A744F1D053 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		13B602D150164E66FF61C442110273A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		13B602D150164E66FF61C442110273A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		15926DB299810F1DA9AFB0A2CA1784A2 /* UIDevice+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/UIDevice+STExtension.h"; sourceTree = "<group>"; };
 		173A27F7A2F6E60553B54D937F8BF20A /* LibraryBaseBusiness-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LibraryBaseBusiness-prefix.pch"; sourceTree = "<group>"; };
 		17CC3C6F3EDB228D3AD13E923DAB8976 /* NSString+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSString+STExtension.m"; sourceTree = "<group>"; };
-		17D854A7B221FCF633F0673D4CEFA414 /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
+		17D854A7B221FCF633F0673D4CEFA414 /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
 		1AEEBEB5369647D87B36BB0F4053DF6C /* StringUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringUtil.h; path = LibraryFoundation/Classes/STExtensions/StringUtil.h; sourceTree = "<group>"; };
 		1C4392A543718F94588B1E3CDC025B17 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/minizip/aes/brg_types.h; sourceTree = "<group>"; };
 		1CCA395E142B613E2BD6B9706F035647 /* STBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STBus.m; path = LibraryBaseBusiness/Classes/STBus.m; sourceTree = "<group>"; };
 		1D9E59BC008AC5D10B11EC44F7B4B49A /* NSNotificationCenter+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSNotificationCenter+STExtension.m"; sourceTree = "<group>"; };
-		1FF805ABE94F2C31BD998718C0E73366 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1FF805ABE94F2C31BD998718C0E73366 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		20CCF242F4116CF58B550DEAF1041DC1 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/minizip/aes/sha1.h; sourceTree = "<group>"; };
-		223607C4AF3AD5D8D8CF7D9BE1673791 /* libLibraryHybridWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLibraryHybridWebView.a; path = libLibraryHybridWebView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		261B3A8DD6D296DE3565FEB63824D3FF /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
+		223607C4AF3AD5D8D8CF7D9BE1673791 /* libLibraryHybridWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibraryHybridWebView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		261B3A8DD6D296DE3565FEB63824D3FF /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
 		26D1D0A336C70F4F31B3FE963CF5050A /* NSString+Md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Md5.h"; path = "LibraryFoundation/Classes/Foundation/NSString+Md5.h"; sourceTree = "<group>"; };
 		27D3D38E15C9213005DA740280CCA725 /* LibraryHybridWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryHybridWebView.release.xcconfig; sourceTree = "<group>"; };
 		29A932A55588850A5533CCE80E5C223B /* Pods-LibraryHybridWebView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LibraryHybridWebView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A7510CE5C7C4B65F4C1EC1F3187EAED /* NSFileManager+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSFileManager+STExtension.h"; sourceTree = "<group>"; };
-		2BC7311C95C3F7A248A3913F5DD54E04 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
+		2BC7311C95C3F7A248A3913F5DD54E04 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
 		2C5CCB4C39C2E1E1742CE72BEECA8256 /* STDragNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STDragNavigationController.m; path = LibraryFoundation/Classes/Navigation/STDragNavigationController.m; sourceTree = "<group>"; };
 		2FEB2C6FCFABB3A171CF31450ABE2E0C /* ioapi_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_buf.h; path = SSZipArchive/minizip/ioapi_buf.h; sourceTree = "<group>"; };
 		3624BE1891EABD3A9777A91AFF0CE2BC /* STDragNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STDragNavigationController.h; path = LibraryFoundation/Classes/Navigation/STDragNavigationController.h; sourceTree = "<group>"; };
@@ -216,21 +218,21 @@
 		4F10986204C90C5250B9E6CE6B5882EF /* LibraryHybridWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LibraryHybridWebView-dummy.m"; sourceTree = "<group>"; };
 		4F9EC6964835677ACAADF00B3CA791B6 /* STHybirdViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHybirdViewController.h; path = LibraryHybridWebView/Classes/STHybirdViewController.h; sourceTree = "<group>"; };
 		4FE83F84F54C85D4A516BDCAA021F1DC /* STCommunicationPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STCommunicationPlugin.m; path = LibraryBaseBusiness/Classes/Communication/STCommunicationPlugin.m; sourceTree = "<group>"; };
-		530DE0E91C69BDF34686327DEE2D2439 /* libPods-LibraryHybridWebView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LibraryHybridWebView_Example.a"; path = "libPods-LibraryHybridWebView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		539D281073A61050734A9C2E2701E12C /* libPods-LibraryHybridWebView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LibraryHybridWebView_Tests.a"; path = "libPods-LibraryHybridWebView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		530DE0E91C69BDF34686327DEE2D2439 /* libPods-LibraryHybridWebView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LibraryHybridWebView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		539D281073A61050734A9C2E2701E12C /* libPods-LibraryHybridWebView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LibraryHybridWebView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542829D3152F00818CCA02B181E1D94B /* LibraryFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LibraryFoundation-dummy.m"; sourceTree = "<group>"; };
 		54E66AFD508660B13FAE1503C23C2E8F /* NSArray+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSArray+STExtension.m"; sourceTree = "<group>"; };
-		59C38E85932255FEA4538C0F233FC65B /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
+		59C38E85932255FEA4538C0F233FC65B /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
 		5A05A72E29E97BE81A02D0EE095F7B15 /* STBaseBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBaseBusiness.h; path = LibraryBaseBusiness/Classes/STBaseBusiness.h; sourceTree = "<group>"; };
 		5AE03DFEED419DFBFB27B24CFE4A3FFA /* STBSPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBSPatch.h; path = LibraryFoundation/Classes/Thread/STBSPatch.h; sourceTree = "<group>"; };
 		5BD0EB684DDC5E22A5D2A18763F5A93D /* STCommunicationPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STCommunicationPlugin.h; path = LibraryBaseBusiness/Classes/Communication/STCommunicationPlugin.h; sourceTree = "<group>"; };
 		5CC70FB5A9BBAD7F4B9A61D8F206EC6B /* STBusObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STBusObject.m; path = LibraryBaseBusiness/Classes/STBusObject.m; sourceTree = "<group>"; };
-		5F1FCFB776BD5ADAC281C469430A660D /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		5F1FCFB776BD5ADAC281C469430A660D /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
 		61F99752A71B7ED915208E85F2B9F26D /* LibraryBaseBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryBaseBusiness.release.xcconfig; sourceTree = "<group>"; };
 		63466BCCDCAF0EC645892A9BE067F1FC /* NSFileManager+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSFileManager+STExtension.m"; sourceTree = "<group>"; };
-		64607A1440C66AF6B782C6FA506E6755 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		64607A1440C66AF6B782C6FA506E6755 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6542FB7F21D10C75CB35221FA89751B9 /* LibraryFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryFoundation.release.xcconfig; sourceTree = "<group>"; };
-		6603D9E8ADE645C0AE39C8A8DB20B856 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
+		6603D9E8ADE645C0AE39C8A8DB20B856 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
 		68499F09106780B1BCAA360B4B6380E6 /* NSUserDefaults+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSUserDefaults+STExtension.m"; sourceTree = "<group>"; };
 		69BBE0C5B057AF5B303C9C27BDBD8578 /* UIDevice+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/UIDevice+STExtension.m"; sourceTree = "<group>"; };
 		6A435A04EC156ABD3BF5E2D2F8D9A649 /* STSchemalRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STSchemalRule.h; path = LibraryBaseBusiness/Classes/Communication/STSchemalRule.h; sourceTree = "<group>"; };
@@ -242,17 +244,17 @@
 		71EB33487752426EF2902C783108EAFF /* STMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STMacros.h; path = LibraryFoundation/Classes/STExtensions/STMacros.h; sourceTree = "<group>"; };
 		7291FAE7F40E5E61282258C0E7D566DF /* SSZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.release.xcconfig; sourceTree = "<group>"; };
 		792CA8572D3493AB25E16CE9428822E2 /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
-		7E45A7DEAC99A9915617B40E190BF0D4 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
+		7E45A7DEAC99A9915617B40E190BF0D4 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
 		7F37618F5A96767B62B472A16A21D8FE /* STRNUnZip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STRNUnZip.m; path = LibraryFoundation/Classes/Tools/STRNUnZip.m; sourceTree = "<group>"; };
 		8331D094E2014E6E9713705335D74786 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		839EE15288FD84DB77E167FD9D475822 /* STNavViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STNavViewController.m; path = LibraryFoundation/Classes/UIKit/STNavViewController.m; sourceTree = "<group>"; };
 		8754C12E0934A46267D7A7095F80EBB7 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/minizip/aes/hmac.h; sourceTree = "<group>"; };
-		89866FA6D739B746DB74120D5BD6A2FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		89866FA6D739B746DB74120D5BD6A2FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8B43B27933672F8E0FFADAAEF74F4638 /* NSString+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSString+STExtension.h"; sourceTree = "<group>"; };
 		8F668B2823FC692E7520D12A32AB548E /* STBSPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STBSPatch.m; path = LibraryFoundation/Classes/Thread/STBSPatch.m; sourceTree = "<group>"; };
 		8FAAB114880A63B6BD68E2B9B8EDB623 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
 		8FBB26EC944F035E6A292D3D08BB7666 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
-		91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSZipArchive.a; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F1234311A68C3F7C73FFE5D0498CBA /* LibraryFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryFoundation.debug.xcconfig; sourceTree = "<group>"; };
 		93ABAA90B74CF1D27FED0763798C002A /* NSDate+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSDate+STExtension.m"; sourceTree = "<group>"; };
 		956BA727BF9D93F6CA85F643DDDB3D6D /* Pods-LibraryHybridWebView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibraryHybridWebView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -260,43 +262,45 @@
 		962C56C887D4396A97116AE668725C68 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
 		98FF9F7465AD8EB2D58CC8AAF4713391 /* STCommunication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STCommunication.h; path = LibraryBaseBusiness/Classes/Communication/STCommunication.h; sourceTree = "<group>"; };
 		9D25C94EEC4BA372CDD85B8E3D481A14 /* Pods-LibraryHybridWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E68A97E897158071C927A7EA2F0FA56 /* Pods-LibraryHybridWebView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LibraryHybridWebView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9FB15188D6A3D8D99D1C9003787AB9FA /* STBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBus.h; path = LibraryBaseBusiness/Classes/STBus.h; sourceTree = "<group>"; };
 		A2A0097FA36F4CB773D55D903411B7B4 /* STRNFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STRNFileManager.m; path = LibraryFoundation/Classes/FileManager/STRNFileManager.m; sourceTree = "<group>"; };
 		A46238FD230E9CF8A82A3E28F8A4416C /* Pods-LibraryHybridWebView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibraryHybridWebView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A56E049A77611F16E26916013C80E6D7 /* Pods-LibraryHybridWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A7B02645FAB25CBF0E98143129756696 /* LibraryHybridWebView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LibraryHybridWebView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA8CD68A28FF66F8F16C2208D85D5CB3 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
+		A7B02645FAB25CBF0E98143129756696 /* LibraryHybridWebView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LibraryHybridWebView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA8CD68A28FF66F8F16C2208D85D5CB3 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
 		B065937F273C701B31E502A20D0A5F03 /* NSDate+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSDate+STExtension.h"; sourceTree = "<group>"; };
 		B0CF73FAF7E71BB160711BFF1ECA6605 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
 		B6BFC67BE0C7296F1A0FE36B8B6D1081 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/minizip/aes/aesopt.h; sourceTree = "<group>"; };
 		B6D0EFE31195628FD431A9F00AFDFD49 /* NSData+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSData+STExtension.m"; sourceTree = "<group>"; };
 		B89CB9418434038B5D387A885A6B881D /* LibraryBaseBusiness-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LibraryBaseBusiness-dummy.m"; sourceTree = "<group>"; };
+		B9C385B426F3479F003B87A4 /* STURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = STURLProtocol.h; path = LibraryHybridWebView/Classes/STURLProtocol.h; sourceTree = "<group>"; };
+		B9C385B526F3479F003B87A4 /* STURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = STURLProtocol.m; path = LibraryHybridWebView/Classes/STURLProtocol.m; sourceTree = "<group>"; };
 		B9C6AE590CAF0C68B6D527508ABD3594 /* STThredUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STThredUtil.m; path = LibraryFoundation/Classes/Thread/STThredUtil.m; sourceTree = "<group>"; };
-		BA0DC5082E595577433F373A58881245 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		BBC6D97E8F610426235077D5B5EFCDB4 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
+		BA0DC5082E595577433F373A58881245 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BBC6D97E8F610426235077D5B5EFCDB4 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
 		BF33FD4DD18B94F4A31B6402DB058C83 /* STRNUnZip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STRNUnZip.h; path = LibraryFoundation/Classes/Tools/STRNUnZip.h; sourceTree = "<group>"; };
 		C135EBEFC954EC3F09F7BC1DF0996868 /* LibraryHybridWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LibraryHybridWebView-prefix.pch"; sourceTree = "<group>"; };
-		C261407A96FC4C1BFA760695CE7B5816 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
-		C3E4FC2CA756E0952DCA0CBCD24117CF /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		C261407A96FC4C1BFA760695CE7B5816 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
+		C3E4FC2CA756E0952DCA0CBCD24117CF /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
 		C4C990DC76C3C3C2FB2219110D494FA2 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/minizip/aes/aestab.h; sourceTree = "<group>"; };
 		C574229760899B807A086B6A95C5F7E7 /* STRNFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STRNFileManager.h; path = LibraryFoundation/Classes/FileManager/STRNFileManager.h; sourceTree = "<group>"; };
 		C61056B2ADFBFAE94130E5B66B10CA9E /* Pods-LibraryHybridWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C66AE0A0648578CD51E9261A3D9F364B /* LibraryFoundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LibraryFoundation.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C66AE0A0648578CD51E9261A3D9F364B /* LibraryFoundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LibraryFoundation.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6A78CD8BAF159181A909A806AA0E677 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
 		CAE57EB2F27B20CEA56175349B530A3D /* STJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STJSONSerialization.m; path = LibraryFoundation/Classes/Tools/STJSONSerialization.m; sourceTree = "<group>"; };
-		CE4C23367FB686997303D576C0D64F5B /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
+		CE4C23367FB686997303D576C0D64F5B /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
 		CE90B870BA69129D1E2B3966B33E14A9 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/minizip/aes/fileenc.h; sourceTree = "<group>"; };
 		CFF6006416019D70CF7168938F353F68 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
 		D1376197136E005347BA3B1D7F62346A /* UIView+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/UIView+STExtension.h"; sourceTree = "<group>"; };
 		D1E201A632A431906719AD5B3133E26F /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
-		D7C8F977A7A919AF8FC34A7C10D38D4B /* libLibraryBaseBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLibraryBaseBusiness.a; path = libLibraryBaseBusiness.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C8F977A7A919AF8FC34A7C10D38D4B /* libLibraryBaseBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibraryBaseBusiness.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D834B31A95E9A61935B9AA7BC7A9AEDB /* NSDictionary+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSDictionary+STExtension.h"; sourceTree = "<group>"; };
 		DB9E5E7B27A18FEB766AFA6E7999321A /* NSDictionary+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/NSDictionary+STExtension.m"; sourceTree = "<group>"; };
 		DC3E3E8FBD0089878E0C0D86C82B8272 /* LibraryHybridWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LibraryHybridWebView.debug.xcconfig; sourceTree = "<group>"; };
 		DD40FE925239EE8A1C9B40ADEABB38ED /* STJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STJSONSerialization.h; path = LibraryFoundation/Classes/Tools/STJSONSerialization.h; sourceTree = "<group>"; };
-		DF41C9694F668D60CF58BBE6E4DB65BF /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		DF41C9694F668D60CF58BBE6E4DB65BF /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
 		E0D43B385BC820B5D8767FF80CABDC0D /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = minishared.h; path = SSZipArchive/minizip/minishared.h; sourceTree = "<group>"; };
 		E0F5AE27F6FBBE028F534D6445BF4721 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LibraryHybridWebView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		E1DA1A120B206BCADA59C4509C611968 /* STLeftDragPanGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STLeftDragPanGestureRecognizer.h; path = LibraryFoundation/Classes/Navigation/STLeftDragPanGestureRecognizer.h; sourceTree = "<group>"; };
@@ -304,11 +308,11 @@
 		E637AE09221F2646901BDA9F47ED7802 /* Pods-LibraryHybridWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibraryHybridWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E7799163ABBBD0E3FC2557A0083D6827 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/minizip/aes/prng.h; sourceTree = "<group>"; };
 		EA318BD1A522B6832F549FC8572FE098 /* STSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STSingleton.h; path = LibraryFoundation/Classes/STExtensions/STSingleton.h; sourceTree = "<group>"; };
-		ED449B18268078C220246F89654D5065 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		ED449B18268078C220246F89654D5065 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EEB93B165C0BA59149160FBC763545D3 /* STLeftDragPanGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STLeftDragPanGestureRecognizer.m; path = LibraryFoundation/Classes/Navigation/STLeftDragPanGestureRecognizer.m; sourceTree = "<group>"; };
-		EEFC43E1AE8E3C07B121265906D1705B /* libLibraryFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLibraryFoundation.a; path = libLibraryFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF8781E582E2C9BEA775B53C85B1060F /* LibraryBaseBusiness.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LibraryBaseBusiness.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EF92C0EAB79BB7F61E8FD0A529173916 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
+		EEFC43E1AE8E3C07B121265906D1705B /* libLibraryFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibraryFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8781E582E2C9BEA775B53C85B1060F /* LibraryBaseBusiness.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LibraryBaseBusiness.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF92C0EAB79BB7F61E8FD0A529173916 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
 		F0F9A13BD4D5CAC386FEBFE1A463FFDB /* NSNotificationCenter+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSNotificationCenter+STExtension.h"; sourceTree = "<group>"; };
 		F17912163D8512BFC331A577D87DB3E0 /* StringUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StringUtil.m; path = LibraryFoundation/Classes/STExtensions/StringUtil.m; sourceTree = "<group>"; };
 		F1A588BBD87E5A251866D87987B34B8E /* ioapi_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = SSZipArchive/minizip/ioapi_mem.h; sourceTree = "<group>"; };
@@ -320,9 +324,9 @@
 		F6C614D4C65D41659F631321863C9630 /* UIView+STExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+STExtension.m"; path = "LibraryFoundation/Classes/STExtensions/UIView+STExtension.m"; sourceTree = "<group>"; };
 		F7D12C28815428DCD75C71C43B130A09 /* NSUserDefaults+STExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+STExtension.h"; path = "LibraryFoundation/Classes/STExtensions/NSUserDefaults+STExtension.h"; sourceTree = "<group>"; };
 		FB15C1F75D1F4AE002BCF0A49F64A815 /* STBusObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STBusObject.h; path = LibraryBaseBusiness/Classes/STBusObject.h; sourceTree = "<group>"; };
-		FBC4B109F3980385C5BAC7E2FC1F10D3 /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
+		FBC4B109F3980385C5BAC7E2FC1F10D3 /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
 		FD5D0731CF9E5D8418790E9AE78C4315 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/minizip/aes/aes.h; sourceTree = "<group>"; };
-		FEA8CD287D94C3BB82D153938879C569 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
+		FEA8CD287D94C3BB82D153938879C569 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -629,7 +633,6 @@
 				057D550B4C33693E2B34673B9E394146 /* ZipArchive.h */,
 				938F6A716507F9287D6862B970697A45 /* Support Files */,
 			);
-			name = SSZipArchive;
 			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
@@ -648,6 +651,8 @@
 				6E364A2010A00FF3DA8C4260A34A3934 /* STHybirdViewController.m */,
 				3A685CD45E76CFFAE0CADCA27B7E5FAA /* STWKWebViewController.h */,
 				446CC8D32C2F2574C5CF4D64DF87DC6A /* STWKWebViewController.m */,
+				B9C385B426F3479F003B87A4 /* STURLProtocol.h */,
+				B9C385B526F3479F003B87A4 /* STURLProtocol.m */,
 				6D3745DB2FABAD9C46D448D04BC03A50 /* Pod */,
 				F9C8F5BC88DFAF8F9962096C0EA55562 /* Support Files */,
 			);
@@ -831,6 +836,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B1F165D8961DC6A7EDBB81353D5EBC /* STHybirdViewController.h in Headers */,
+				B9C385B626F3479F003B87A4 /* STURLProtocol.h in Headers */,
 				E973561F89A5BB487A68BB73C1F59438 /* STWKWebViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1043,6 +1049,7 @@
 				45CBD9839AAD70205B8933815A8EBA90 /* LibraryHybridWebView-dummy.m in Sources */,
 				6895C5B1CF41FF67E5E0E503F53114E1 /* ReplaceMe.m in Sources */,
 				54293947C1764EB828B3C5A05F5B3BAF /* STHybirdViewController.m in Sources */,
+				B9C385B726F3479F003B87A4 /* STURLProtocol.m in Sources */,
 				6E5829AF4EE08E4F637D4BC79CEC536E /* STWKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1300,8 +1307,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
