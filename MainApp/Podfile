@@ -1,0 +1,10 @@
+
+platform :ios, '8.0'
+
+target 'MainApp' do
+  pod 'LibraryHybridWebView', :path => '../LibraryHybridWebView'
+  pod 'LibraryFoundation', :path => '../LibraryFoundation'
+  pod 'LibraryBaseBusiness', :path => '../LibraryBaseBusiness'
+# pod 'AFNetworking'
+ 
+end

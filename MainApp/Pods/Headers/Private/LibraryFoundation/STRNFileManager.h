@@ -1,0 +1,1 @@
+../../../../../LibraryFoundation/LibraryFoundation/Classes/FileManager/STRNFileManager.h

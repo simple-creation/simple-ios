@@ -1,0 +1,1 @@
+../../../../../LibraryBaseBusiness/LibraryBaseBusiness/Classes/Communication/STCommunicationPlugin.h
