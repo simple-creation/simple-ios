@@ -75,6 +75,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)localMd5Path:(NSString *)path CompareToNetMd5:(NSString *)md5;
 
+
+
+/// 文件包位置
++ (NSString *)cachePath;
+
 @end
 
 NS_ASSUME_NONNULL_END

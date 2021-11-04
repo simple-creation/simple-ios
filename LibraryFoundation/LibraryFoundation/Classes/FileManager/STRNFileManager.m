@@ -43,7 +43,7 @@ static NSString * const FILE_NAME_BASE_UNZIP = @"base-%d"; //基础解压缩目�
 }
 
 + (NSString *)cachePath {
-    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
 }
 
 + (BOOL)moveItemAtPath:(NSString *)srcPath toPath:(NSString *)dstPath  {

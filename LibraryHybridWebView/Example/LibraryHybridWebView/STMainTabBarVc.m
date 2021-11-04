@@ -9,6 +9,8 @@
 #import "STMainTabBarVc.h"
 #import "STNavViewController.h"
 #import "STWKWebViewController.h"
+#import "STRNUnZip.h"
+#import "STRNFileManager.h"
 @interface STMainTabBarVc ()
 
 @end
@@ -19,11 +21,16 @@
     [super viewDidLoad];
     
     STWKWebViewController *wkWebView = [[STWKWebViewController alloc] init];
+    ;
 //    wkWebView.tabBarItem.title = @"H5";
 //    wkWebView.url = @"http://www.baidu.com";
-    NSURL *localUrl = [[NSBundle mainBundle] URLForResource:@"root" withExtension:@"html"];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"root" ofType:@"html"];
-    wkWebView.localUrl = localUrl;
+//    NSURL *localUrl = [[NSBundle mainBundle] URLForResource:@"root" withExtension:@"html"];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"root" ofType:@"html"];
+    if ([STRNUnZip unzipFileAtPath:[[NSBundle mainBundle] pathForResource:@"h5" ofType:@"zip"] toDestination:[[STRNFileManager cachePath] stringByAppendingPathComponent:@"/hybrid"]]) {
+        NSLog(@"%@",[[STRNFileManager cachePath] stringByAppendingPathComponent:@"/hybrid"]);
+        NSLog(@"解压成功");
+    }
+    wkWebView.localUrl = [NSURL fileURLWithPath:[[STRNFileManager cachePath] stringByAppendingPathComponent:@"/hybrid/h5/index.html"]];
     [self addNavViewControllerWithImageName:@"BottomTabBar_BorrowBook" withVc: wkWebView];
 }
 

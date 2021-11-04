@@ -13,6 +13,7 @@
 #define kURLPrefix          @"easygs://hybird/bridge/"
 //#define kURLString          @"http://10.32.33.2:5389/#/"
 #define kURLString          @"http:www.baidu.com"
+#define kDocumentDir    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
 
 @interface STWKWebViewController ()<WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler>
@@ -57,8 +58,9 @@
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
     } else {
         if (@available(iOS 9.0, *)) {
-            
-            [self.webView loadFileURL:self.localUrl allowingReadAccessToURL:self.localUrl];
+            NSURL* doc = [NSURL fileURLWithPath:kDocumentDir relativeToURL:nil];
+
+            [self.webView loadFileURL:self.localUrl allowingReadAccessToURL:doc];
 //            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.localUrl cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:15];
 //            [self.webView loadRequest:request];
         } else {

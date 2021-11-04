@@ -24,6 +24,7 @@
 		8090556B6411276DF2A0C14A /* libPods-LibraryHybridWebView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7983052844D8B3CD248E3ADA /* libPods-LibraryHybridWebView_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B981AA3426C0D71E000DB97E /* STMainTabBarVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B981AA3326C0D71E000DB97E /* STMainTabBarVc.m */; };
+		B9B544F327339263005570C2 /* h5.zip in Resources */ = {isa = PBXBuildFile; fileRef = B9B544F227339263005570C2 /* h5.zip */; };
 		B9C385B326F34587003B87A4 /* root.html in Resources */ = {isa = PBXBuildFile; fileRef = B9C385B226F34586003B87A4 /* root.html */; };
 		CD30A9EE3417F54909FBD1FE /* libPods-LibraryHybridWebView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B5C93969CAB98E4B0F1194 /* libPods-LibraryHybridWebView_Tests.a */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		B3A1180316D862A8422AB885 /* Pods-LibraryHybridWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryHybridWebView_Example.debug.xcconfig"; path = "Target Support Files/Pods-LibraryHybridWebView_Example/Pods-LibraryHybridWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B981AA3226C0D71E000DB97E /* STMainTabBarVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STMainTabBarVc.h; sourceTree = "<group>"; };
 		B981AA3326C0D71E000DB97E /* STMainTabBarVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STMainTabBarVc.m; sourceTree = "<group>"; };
+		B9B544F227339263005570C2 /* h5.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = h5.zip; sourceTree = "<group>"; };
 		B9C385B226F34586003B87A4 /* root.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = root.html; sourceTree = "<group>"; };
 		FB3FC890C57DEFCAC9997F64 /* Pods-LibraryHybridWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryHybridWebView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LibraryHybridWebView_Tests/Pods-LibraryHybridWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* STViewController.h */,
 				6003F5A6195388D20070C39A /* STViewController.m */,
+				B9B544F227339263005570C2 /* h5.zip */,
 				B981AA3226C0D71E000DB97E /* STMainTabBarVc.h */,
 				B9C385B226F34586003B87A4 /* root.html */,
 				B981AA3326C0D71E000DB97E /* STMainTabBarVc.m */,
@@ -291,6 +294,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				B9B544F327339263005570C2 /* h5.zip in Resources */,
 				B9C385B326F34587003B87A4 /* root.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
