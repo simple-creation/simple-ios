@@ -21,13 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    STWKWebViewController *wkWebView = [[STWKWebViewController alloc] init];
-    wkWebView.tabBarItem.title = @"Hybrid";
-    if ([STRNUnZip unzipFileAtPath:[[NSBundle mainBundle] pathForResource:@"h5" ofType:@"zip"] toDestination:[[STRNFileManager cachePath] stringByAppendingPathComponent:@"/hybrid"]]) {
-        NSLog(@"%@",[[STRNFileManager cachePath] stringByAppendingPathComponent:@"/hybrid"]);
-    }
-    wkWebView.localUrl = [NSURL fileURLWithPath:[[STRNFileManager cachePath] stringByAppendingPathComponent:@"/hybrid/h5/index.html"]];
-    [self addNavViewControllerWithImageName:@"BottomTabBar_BorrowBook" withVc: wkWebView];
+    
     STViewController *stVc = [[STViewController alloc] init];
     stVc.tabBarItem.title = @"Native";
     [self addNavViewControllerWithImageName:@"BottomTabBar_BorrowBook" withVc: stVc];

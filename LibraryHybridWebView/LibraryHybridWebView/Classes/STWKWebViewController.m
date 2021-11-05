@@ -52,7 +52,7 @@
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     WKUserContentController *userController = [[WKUserContentController alloc] init];
     configuration.userContentController = userController;
-    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height-200) configuration:configuration];
+    self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
     [userController addScriptMessageHandler:self name:@"bridge"];
     if (self.url) {
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
@@ -73,6 +73,13 @@
     //开了支持滑动返回
     self.webView.allowsBackForwardNavigationGestures = YES;
     [self.view addSubview:self.webView];
+    
+    
+    UIButton *btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [btn addTarget:self action:@selector(back) forControlEvents:(UIControlEventTouchUpInside)];
+    [btn setImage:[UIImage imageNamed:@"back"] forState:(UIControlStateNormal)];
+    btn.frame = CGRectMake(0, 0, 30, 30);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 
 #pragma mark WKUIDelegate
@@ -132,9 +139,36 @@
     }
 }
 
+//- webviewnav
+//- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+//    
+//    NSLog(@"absoluteString %@",navigationAction.request.URL.absoluteString);
+//    
+//}
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+//    self.title = webView.title;
+    
+    
+    [webView evaluateJavaScript:@"document.title" completionHandler:^(id _Nullable webTitle, NSError * _Nullable error) {
+                NSLog(@"%@webTitle",webTitle);
+        if (webTitle) {
+            self.title = webTitle;
+        }
+
+    }];
+
+}
+
+- (void)back {
+    if ([self.webView canGoBack]) {
+        [self.webView goBack];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 - (void)dealloc {
     self.webView = nil;
-
 
 }
 
