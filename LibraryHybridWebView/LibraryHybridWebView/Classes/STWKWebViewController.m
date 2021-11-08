@@ -74,12 +74,21 @@
     self.webView.allowsBackForwardNavigationGestures = YES;
     [self.view addSubview:self.webView];
     
+    [self.webView addObserver:self forKeyPath:@"title" options:(NSKeyValueObservingOptionNew) context:nil];
     
     UIButton *btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [btn addTarget:self action:@selector(back) forControlEvents:(UIControlEventTouchUpInside)];
     [btn setImage:[UIImage imageNamed:@"back"] forState:(UIControlStateNormal)];
     btn.frame = CGRectMake(0, 0, 30, 30);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    if ([keyPath isEqualToString:@"title"]) {
+        self.title = _webView.title;
+    }
+    
 }
 
 #pragma mark WKUIDelegate
@@ -140,11 +149,19 @@
 }
 
 //- webviewnav
-//- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
-//    
-//    NSLog(@"absoluteString %@",navigationAction.request.URL.absoluteString);
-//    
-//}
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    
+    NSLog(@"absoluteString %@",navigationAction.request.URL.absoluteString);
+    self.title = webView.title;
+
+    decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(null_unspecified WKNavigation *)navigation {
+    NSLog(@"absoluteString ===");
+}
+
+
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
 //    self.title = webView.title;
     
