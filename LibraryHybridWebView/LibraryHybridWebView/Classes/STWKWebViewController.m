@@ -76,6 +76,8 @@
     
     [self.webView addObserver:self forKeyPath:@"title" options:(NSKeyValueObservingOptionNew) context:nil];
     
+    [self.webView addObserver:self forKeyPath:@"URL" options:(NSKeyValueObservingOptionNew) context:nil];
+
     UIButton *btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [btn addTarget:self action:@selector(back) forControlEvents:(UIControlEventTouchUpInside)];
     [btn setImage:[UIImage imageNamed:@"back"] forState:(UIControlStateNormal)];
@@ -87,6 +89,8 @@
     
     if ([keyPath isEqualToString:@"title"]) {
         self.title = _webView.title;
+    } else if ([keyPath isEqualToString:@"URL"]) {
+        NSLog(@"%@",_webView.URL);
     }
     
 }
